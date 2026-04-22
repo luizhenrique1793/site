@@ -1,0 +1,5 @@
+Adicione aqui os arquivos de assets:
+- logo.png        (300×80px, fundo transparente)
+- favicon.png     (512×512px)
+- og-image.jpg    (1200×630px)
+- atendefit-og.jpg (1200×630px)
