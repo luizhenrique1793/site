@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Ícone AtendeFIT</title>
+  <rect width="64" height="64" rx="18" fill="#C6FF47"/>
+  <rect x="14" y="18" width="36" height="30" rx="10" fill="#071311"/>
+  <path d="M32 12v6" stroke="#071311" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="10" r="3" fill="#071311"/>
+  <circle cx="25" cy="32" r="3" fill="#C6FF47"/><circle cx="39" cy="32" r="3" fill="#C6FF47"/>
+  <path d="M24 40c5 4 11 4 16 0" fill="none" stroke="#C6FF47" stroke-width="3" stroke-linecap="round"/>
+</svg>

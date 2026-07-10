@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18138072784"></script>
+<script>gtag('js',new Date());gtag('config','AW-18138072784');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- SEO PRIMÁRIO -->
-<title>AtendeFIT — Agente de IA para Academias e Centros Fitness | Matrículas no Automático</title>
-<meta name="description" content="O AtendeFIT é o agente de IA especializado para academias. Responde leads em 3 segundos, agenda aulas experimentais e faz follow-up automático 24h/7 dias. Aumente suas matrículas sem contratar mais pessoas.">
+<title>AtendeFIT — Agente de IA para academias no WhatsApp</title>
+<meta name="description" content="Atenda interessados no WhatsApp, organize aulas experimentais e faça follow-up com um agente de IA configurado para a rotina da sua academia.">
 <meta name="keywords" content="agente de IA academia, chatbot academia, automação academia, WhatsApp academia, atendimento automatizado academia, agendamento aulas experimentais, AtendeFIT, AutomaLeads academia, gestão academia, matrícula automática">
 <meta name="author" content="AutomaLeads">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://automaleads.com/atendefit">
+<link rel="canonical" href="https://automaleads.com/atendefit/">
 
 <!-- OPEN GRAPH / FACEBOOK -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://automaleads.com/atendefit">
-<meta property="og:title" content="AtendeFIT — Agente de IA que faz matrículas para sua Academia 24h/dia">
-<meta property="og:description" content="Responde leads em 3 segundos, agenda experimentais e faz follow-up automático. +200 academias já automatizaram. Teste grátis.">
-<meta property="og:image" content="/assets/atendefit-og.jpg">
+<meta property="og:url" content="https://automaleads.com/atendefit/">
+<meta property="og:title" content="AtendeFIT — Agente de IA para academias no WhatsApp">
+<meta property="og:description" content="Atendimento no WhatsApp, agendamento de aulas experimentais e follow-up para academias com agentes de IA.">
+<meta property="og:image" content="https://automaleads.com/assets/atendefit-og.jpg">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="AtendeFIT by AutomaLeads">
 
 <!-- TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AtendeFIT — Agente de IA para Academias">
-<meta name="twitter:description" content="Resposta em 3 segundos. Agenda experimentais. Faz matrículas enquanto você dorme.">
-<meta name="twitter:image" content="/assets/atendefit-og.jpg">
+<meta name="twitter:description" content="Atenda interessados, organize agendamentos e faça follow-up no WhatsApp com IA.">
+<meta name="twitter:image" content="https://automaleads.com/assets/atendefit-og.jpg">
 
 <!-- FAVICON -->
 <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -41,12 +44,7 @@
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "description": "Agente de IA especializado para academias e centros fitness. Atendimento automático no WhatsApp 24h, agendamento de aulas experimentais e follow-up inteligente para aumentar matrículas.",
-  "url": "https://automaleads.com/atendefit",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "200"
-  },
+  "url": "https://automaleads.com/atendefit/",
   "provider": {
     "@type": "Organization",
     "name": "AutomaLeads",
@@ -63,6 +61,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/privacy-consent.css">
 <style>
 /* ============================================================
    ATENDE FIT — LANDING PAGE v4.1
@@ -1367,29 +1366,6 @@ input, select, textarea { font-family: var(--font); }
 .sticky-wpp:hover { background: #20bd5a; transform: scale(1.03); }
 
 /* ============================================================
-   TOAST
-   ============================================================ */
-.toast-container {
-  position: fixed; bottom: 80px; left: 16px;
-  z-index: 300; display: flex; flex-direction: column; gap: 9px;
-  pointer-events: none; max-width: calc(100vw - 32px);
-}
-.toast {
-  background: var(--bg-elevated); border: 1px solid var(--border-light);
-  border-left: 3px solid var(--primary); border-radius: var(--radius);
-  padding: 10px 14px; display: flex; align-items: center; gap: 9px;
-  max-width: 260px; box-shadow: var(--shadow-lg);
-  animation: toast-in 0.4s ease forwards; font-size: 0.78rem;
-}
-@keyframes toast-in {
-  from { opacity: 0; transform: translateX(-16px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-.toast-icon { font-size: 0.95rem; flex-shrink: 0; }
-.toast-text { color: var(--text-secondary); }
-.toast-text strong { color: var(--text-primary); display: block; font-size: 0.8rem; }
-
-/* ============================================================
    REVEAL
    ============================================================ */
 .reveal {
@@ -1532,9 +1508,6 @@ input, select, textarea { font-family: var(--font); }
   .sticky-cta { bottom: 14px; right: 14px; }
   .sticky-wpp { font-size: 0.82rem; padding: 11px 16px; }
 
-  /* Toast */
-  .toast-container { bottom: 76px; left: 12px; }
-  .toast { max-width: 240px; }
 }
 
 /* ============================================================
@@ -1704,20 +1677,10 @@ input, select, textarea { font-family: var(--font); }
         <span class="hl-green">O AtendeFIT resolve isso.</span>
       </h1>
       <p class="hero-subhead">
-        Um agente de IA no WhatsApp que responde em <strong style="color:var(--text-primary)">menos de 3 segundos</strong>, agenda aulas experimentais, faz follow-up automático e converte leads em matrículas — enquanto você dorme.
+        Um agente de IA no WhatsApp para responder dúvidas, qualificar interessados, organizar pedidos de aula experimental e fazer follow-up conforme o processo da sua academia.
       </p>
       <div class="hero-proof-bar">
-        <div class="proof-avatars">
-          <div class="proof-avatar">RC</div>
-          <div class="proof-avatar">ML</div>
-          <div class="proof-avatar">JP</div>
-          <div class="proof-avatar">TS</div>
-          <div class="proof-avatar" style="font-size:0.7rem">+</div>
-        </div>
-        <div class="hero-stars">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <span class="proof-text"><strong>+200 academias</strong> já automatizaram o atendimento</span>
+        <span class="proof-text"><strong>Atendimento, agenda e follow-up</strong> conectados no WhatsApp</span>
       </div>
       <div class="hero-actions">
         <a href="https://wa.me/5544988385503?text=Olá!%20Quero%20testar%20o%20agente%20AtendeFIT%20agora!" target="_blank" rel="noopener" class="btn-hero-primary">
@@ -1728,9 +1691,9 @@ input, select, textarea { font-family: var(--font); }
         </a>
       </div>
       <div class="hero-microcopy">
-        <span>Sem cadastro para testar</span>
-        <span>Agente ao vivo</span>
-        <span>Implantado em 24h</span>
+        <span>Demonstração sem cadastro</span>
+        <span>Agente modelo no WhatsApp</span>
+        <span>Implantação definida na proposta</span>
       </div>
     </div>
 
@@ -1762,11 +1725,11 @@ input, select, textarea { font-family: var(--font); }
       </div>
       <div class="floating-badge fb-top">
         <span class="fb-icon">⚡</span>
-        <div><div class="fb-label">Respondeu em</div><div class="fb-value">3 segundos</div></div>
+        <div><div class="fb-label">Atendimento</div><div class="fb-value">Disponível 24 horas</div></div>
       </div>
       <div class="floating-badge fb-bottom">
         <span class="fb-icon">📅</span>
-        <div><div class="fb-label">Agendados hoje</div><div class="fb-value">+12 aulas</div></div>
+        <div><div class="fb-label">Próximo passo</div><div class="fb-value">Agenda organizada</div></div>
       </div>
     </div>
 
@@ -1777,20 +1740,20 @@ input, select, textarea { font-family: var(--font); }
 <div class="stats-strip">
   <div class="stats-inner">
     <div class="stat-item">
-      <span class="stat-number" data-target="78" data-suffix="%">0%</span>
-      <div class="stat-label">dos leads fecham com quem responde primeiro</div>
+      <span class="stat-number">24h</span>
+      <div class="stat-label">para receber e orientar novos contatos</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number" data-target="47" data-suffix=" min">0 min</span>
-      <div class="stat-label">tempo médio de resposta das academias sem IA</div>
+      <span class="stat-number">IA</span>
+      <div class="stat-label">configurada com as informações da academia</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number" data-target="3" data-suffix=" seg">0 seg</span>
-      <div class="stat-label">tempo de resposta do AtendeFIT</div>
+      <span class="stat-number">Agenda</span>
+      <div class="stat-label">para conduzir pedidos de aula experimental</div>
     </div>
     <div class="stat-item">
-      <span class="stat-number" data-target="65" data-suffix="%">0%</span>
-      <div class="stat-label">dos leads chegam fora do horário comercial</div>
+      <span class="stat-number">Equipe</span>
+      <div class="stat-label">acionada quando a conversa precisa de uma pessoa</div>
     </div>
   </div>
 </div>
@@ -1806,21 +1769,21 @@ input, select, textarea { font-family: var(--font); }
           <div class="problem-icon">🌙</div>
           <div class="problem-text">
             <h4>Atendimento só no horário comercial</h4>
-            <p><span class="stat-highlight">65% dos leads chegam fora do horário.</span> Enquanto sua academia está fechada, o concorrente com IA já respondeu, agendou e garantiu a vaga.</p>
+            <p>Novos contatos também chegam à noite, em fins de semana e quando a recepção está ocupada. Sem um fluxo definido, a conversa pode esfriar antes da resposta.</p>
           </div>
         </div>
         <div class="problem-item">
           <div class="problem-icon">⏱️</div>
           <div class="problem-text">
             <h4>Resposta demorada = lead perdido</h4>
-            <p><span class="stat-highlight">Responder em 5 minutos aumenta 100x a chance de fechar.</span> A média das academias é 47 minutos. Você está deixando dinheiro na mesa todo dia.</p>
+            <p>Quando a resposta demora, o interessado pode procurar outra opção. O AtendeFIT ajuda a acolher a mensagem e orientar o próximo passo.</p>
           </div>
         </div>
         <div class="problem-item">
           <div class="problem-icon">📉</div>
           <div class="problem-text">
             <h4>Follow-up que nunca acontece</h4>
-            <p>Recepcionista esquece, está ocupada ou sem tempo. <span class="stat-highlight">80% das vendas exigem 5+ contatos.</span> Sem follow-up automático, você perde a maioria.</p>
+            <p>Sem lembretes e um processo organizado, interessados que ainda não decidiram podem deixar de receber acompanhamento.</p>
           </div>
         </div>
         <div class="problem-item">
@@ -1833,25 +1796,19 @@ input, select, textarea { font-family: var(--font); }
       </div>
       <div class="problem-visual">
         <div class="clock-card">
-          <div class="clock-number">47 min</div>
-          <div class="clock-label">Tempo médio de resposta das academias</div>
+          <div class="clock-number">Online</div>
+          <div class="clock-label">Atendimento disponível também fora do expediente</div>
           <div class="clock-vs">
-            <div class="vs-item"><div class="vs-time bad">47 min</div><div class="vs-sublabel">Academia comum</div></div>
-            <div class="vs-divider">vs</div>
-            <div class="vs-item"><div class="vs-time good">3 seg</div><div class="vs-sublabel">Com AtendeFIT</div></div>
+            <div class="vs-item"><div class="vs-time bad">Manual</div><div class="vs-sublabel">Depende da disponibilidade</div></div>
+            <div class="vs-divider">+</div>
+            <div class="vs-item"><div class="vs-time good">IA</div><div class="vs-sublabel">Acolhe e organiza</div></div>
           </div>
         </div>
         <div class="lost-leads-card">
-          <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:12px;font-weight:600;">📊 O que acontece com cada 100 leads:</p>
-          <div style="margin-bottom:14px">
-            <div class="lost-bar-header"><span>Leads perdidos (sem IA)</span><span style="color:var(--danger);font-weight:700">67 de 100</span></div>
-            <div class="lost-bar-track"><div class="lost-bar-fill" data-width="67"></div></div>
-          </div>
-          <div>
-            <div class="lost-bar-header"><span>Convertidos (com AtendeFIT)</span><span style="color:var(--primary);font-weight:700">91 de 100</span></div>
-            <div class="lost-bar-track"><div class="lost-bar-fill green-fill" data-width="91"></div></div>
-          </div>
-          <p class="bar-caption" style="margin-top:8px">* Média baseada em academias clientes AtendeFIT</p>
+          <p style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:12px;font-weight:600;">O que muda com um fluxo automatizado:</p>
+          <div class="metric-row"><span class="metric-label">Mensagem recebida</span><span class="metric-value green">Atendimento iniciado</span></div>
+          <div class="metric-row"><span class="metric-label">Interesse identificado</span><span class="metric-value green">Contato organizado</span></div>
+          <div class="metric-row"><span class="metric-label">Questão fora do escopo</span><span class="metric-value orange">Equipe acionada</span></div>
         </div>
       </div>
     </div>
@@ -1863,8 +1820,8 @@ input, select, textarea { font-family: var(--font); }
   <div class="section-inner">
     <div class="text-center">
       <div class="section-label">⚙️ Simples de Usar</div>
-      <h2 class="section-title">Ativo em <span class="hl">menos de 24 horas</span></h2>
-      <p class="section-desc">Sem programação, sem complicação. Em três passos você tem um agente de IA respondendo pelo WhatsApp da sua academia.</p>
+      <h2 class="section-title">Implantação em <span class="hl">três etapas</span></h2>
+      <p class="section-desc">O prazo depende do escopo, dos dados e das integrações definidos para sua academia.</p>
     </div>
     <div class="how-steps">
       <div class="step-card">
@@ -1879,8 +1836,8 @@ input, select, textarea { font-family: var(--font); }
       </div>
       <div class="step-card">
         <div class="step-number">3</div>
-        <div class="step-title">Liga e começa a converter</div>
-        <div class="step-desc">Em até 24h o agente está respondendo, agendando aulas experimentais, enviando lembretes e entregando leads quentes para você fechar.</div>
+        <div class="step-title">Validamos e ativamos</div>
+        <div class="step-desc">Testamos respostas, regras e encaminhamentos antes de colocar o agente no fluxo de atendimento combinado.</div>
       </div>
     </div>
   </div>
@@ -1895,14 +1852,14 @@ input, select, textarea { font-family: var(--font); }
       <p class="section-desc">8 camadas de vantagem competitiva que se somam. Cada uma vale por si só. Juntas, transformam sua academia.</p>
     </div>
     <div class="advantages-grid">
-      <div class="adv-card"><div class="adv-icon-wrap">⚡</div><div class="adv-content"><div class="adv-number">Vantagem 01</div><div class="adv-title">Resposta Instantânea 24/7</div><div class="adv-desc">Seu agente responde em <strong>menos de 3 segundos</strong>, mesmo às 2h da manhã, no domingo ou no feriado. Nunca mais um lead sem resposta.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">📅</div><div class="adv-content"><div class="adv-number">Vantagem 02</div><div class="adv-title">Agendamento Automático de Experimentais</div><div class="adv-desc">O agente agenda a aula experimental direto na conversa — <strong>sem precisar da sua equipe</strong>. Você acorda com a agenda cheia.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">🔄</div><div class="adv-content"><div class="adv-number">Vantagem 03</div><div class="adv-title">Follow-up Inteligente e Automático</div><div class="adv-desc">Mensagens nos momentos certos: <strong>1h antes da aula, no dia seguinte e 3 dias depois</strong>. Zero leads esquecidos.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">🧠</div><div class="adv-content"><div class="adv-number">Vantagem 04</div><div class="adv-title">Conhece Sua Academia de Cor</div><div class="adv-desc">Responde planos, valores, horários e modalidades com <strong>precisão e na sua linguagem</strong>. Zero respostas erradas.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">💰</div><div class="adv-content"><div class="adv-number">Vantagem 05</div><div class="adv-title">Redução Real de Custos</div><div class="adv-desc">Faz o trabalho de <strong>3 recepcionistas</strong>, sem CLT, 13º ou férias. Payback garantido em menos de 30 dias.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">📊</div><div class="adv-content"><div class="adv-number">Vantagem 06</div><div class="adv-title">Visibilidade Total do Funil</div><div class="adv-desc">Leads chegados, atendidos, agendados e convertidos — <strong>dados em tempo real</strong> para decisões inteligentes.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">🎯</div><div class="adv-content"><div class="adv-number">Vantagem 07</div><div class="adv-title">Qualificação Automática de Leads</div><div class="adv-desc">Identifica objetivo do lead (emagrecer, massa, condicionamento) e <strong>recomenda o plano ideal</strong> antes de você entrar.</div></div></div>
-      <div class="adv-card"><div class="adv-icon-wrap">📈</div><div class="adv-content"><div class="adv-number">Vantagem 08</div><div class="adv-title">Escala Sem Limite</div><div class="adv-desc">10 ou 1.000 mensagens ao mesmo tempo — o agente atende todos com a mesma qualidade. <strong>Sem fila, sem atraso.</strong></div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">⚡</div><div class="adv-content"><div class="adv-number">Vantagem 01</div><div class="adv-title">Atendimento Disponível 24/7</div><div class="adv-desc">O agente pode acolher novas mensagens fora do expediente e iniciar o fluxo definido pela academia.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">📅</div><div class="adv-content"><div class="adv-number">Vantagem 02</div><div class="adv-title">Pedidos de Aula Organizados</div><div class="adv-desc">O agente pode coletar dados e sugerir horários conforme as regras e integrações configuradas.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">🔄</div><div class="adv-content"><div class="adv-number">Vantagem 03</div><div class="adv-title">Follow-up Programável</div><div class="adv-desc">Cadências e lembretes são definidos conforme a jornada adotada pela academia.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">🧠</div><div class="adv-content"><div class="adv-number">Vantagem 04</div><div class="adv-title">Baseado nas Suas Informações</div><div class="adv-desc">Planos, valores, horários e modalidades são configurados a partir do conteúdo fornecido pela academia.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">💰</div><div class="adv-content"><div class="adv-number">Vantagem 05</div><div class="adv-title">Menos Tarefas Repetitivas</div><div class="adv-desc">Automatize perguntas frequentes e coletas iniciais para que a equipe se concentre nas conversas que exigem atenção humana.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">📊</div><div class="adv-content"><div class="adv-number">Vantagem 06</div><div class="adv-title">Mais Visibilidade do Funil</div><div class="adv-desc">Organize contatos, pedidos de aula e etapas de acompanhamento conforme os recursos e integrações contratados.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">🎯</div><div class="adv-content"><div class="adv-number">Vantagem 07</div><div class="adv-title">Qualificação Automática de Leads</div><div class="adv-desc">Faça perguntas sobre objetivo e interesse e apresente somente opções previamente configuradas pela academia.</div></div></div>
+      <div class="adv-card"><div class="adv-icon-wrap">📈</div><div class="adv-content"><div class="adv-number">Vantagem 08</div><div class="adv-title">Capacidade Conforme a Operação</div><div class="adv-desc">Volume, simultaneidade e limites de atendimento são dimensionados e informados na proposta comercial.</div></div></div>
     </div>
   </div>
 </section>
@@ -1911,40 +1868,38 @@ input, select, textarea { font-family: var(--font); }
 <section class="section usecase-section" id="caso">
   <div class="section-inner">
     <div class="text-center">
-      <div class="section-label">🎯 Conversa Real</div>
-      <h2 class="section-title">Do primeiro "Oi" à <span class="hl">matrícula confirmada</span></h2>
-      <p class="section-desc">Veja como o agente conduziu uma conversa real — de domingo à noite até o fechamento.</p>
+      <div class="section-label">🎯 Fluxo demonstrativo</div>
+      <h2 class="section-title">Do primeiro "Oi" ao <span class="hl">próximo passo</span></h2>
+      <p class="section-desc">Exemplo ilustrativo de como o agente pode conduzir uma conversa. O resultado depende da configuração e da operação da academia.</p>
     </div>
     <div class="usecase-grid">
       <div class="usecase-timeline">
-        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>💬</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">Domingo, 23h47</div><div class="tl-title">Lead envia mensagem</div><div class="tl-desc">"Oi, quanto custa? Tenho interesse em musculação e cardio."</div></div></div>
-        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>⚡</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">3 segundos depois</div><div class="tl-title">Agente responde e qualifica</div><div class="tl-desc">Letícia se apresenta, pergunta o objetivo do lead e entende o perfil antes de apresentar qualquer plano.</div></div></div>
-        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>🎯</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">5 minutos depois</div><div class="tl-title">Plano ideal apresentado</div><div class="tl-desc">Com base no perfil (musculação + cardio + coletivas), o agente apresenta o plano mais adequado com valores e condições.</div></div></div>
-        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>📅</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">8 minutos depois</div><div class="tl-title">Aula experimental agendada</div><div class="tl-desc">Lead aceitou conhecer a estrutura. Agente confirmou horário, enviou endereço e programou lembrete automático.</div></div></div>
-        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>🏆</span></div></div><div class="tl-content"><div class="tl-time">Após a aula experimental</div><div class="tl-title">Follow-up fecha a matrícula</div><div class="tl-desc">Agente enviou mensagem personalizada pós-aula. Lead virou aluno. Sem nenhuma intervenção humana.</div></div></div>
+        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>💬</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">Fora do horário comercial</div><div class="tl-title">Interessado envia uma mensagem</div><div class="tl-desc">"Oi, quanto custa? Tenho interesse em musculação e cardio."</div></div></div>
+        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>⚡</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">Atendimento iniciado</div><div class="tl-title">Agente responde e qualifica</div><div class="tl-desc">A assistente se apresenta, pergunta o objetivo e entende o perfil antes de indicar o próximo passo.</div></div></div>
+        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>🎯</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">Durante a conversa</div><div class="tl-title">Informações são apresentadas</div><div class="tl-desc">O agente utiliza apenas os planos, valores e condições cadastrados pela academia.</div></div></div>
+        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>📅</span></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-time">Próximo passo</div><div class="tl-title">Pedido de aula organizado</div><div class="tl-desc">O fluxo pode coletar dados, sugerir horários e preparar lembretes, conforme a integração configurada.</div></div></div>
+        <div class="timeline-item"><div class="timeline-left"><div class="tl-dot active-dot"><span>↗</span></div></div><div class="tl-content"><div class="tl-time">Depois do atendimento</div><div class="tl-title">Equipe recebe o contexto</div><div class="tl-desc">A conversa pode ser encaminhada para uma pessoa ou entrar em um fluxo de acompanhamento.</div></div></div>
       </div>
       <div class="usecase-result-card">
-        <div class="module-badge">📊 Resultado da academia modelo</div>
+        <div class="module-badge">📊 O que este fluxo organiza</div>
         <div class="result-header">
           <div class="result-icon">🏋️</div>
-          <div><h3>Academia Modelo — Maringá/PR</h3><p>3 meses usando o AtendeFIT</p></div>
+          <div><h3>Cenário demonstrativo</h3><p>Sem métricas ou resultados inventados</p></div>
         </div>
         <div class="result-metrics">
-          <div class="metric-row"><span class="metric-label">Leads respondidos fora do horário</span><span class="metric-value green">100%</span></div>
-          <div class="metric-row"><span class="metric-label">Tempo médio de resposta</span><span class="metric-value green">3 segundos</span></div>
-          <div class="metric-row"><span class="metric-label">Experimentais agendadas/mês</span><span class="metric-value blue">+87 aulas</span></div>
-          <div class="metric-row"><span class="metric-label">Conversão experimental → matrícula</span><span class="metric-value green">68%</span></div>
-          <div class="metric-row"><span class="metric-label">Novas matrículas no mês</span><span class="metric-value orange">+59 alunos</span></div>
-          <div class="metric-row"><span class="metric-label">Economia em atendimento/mês</span><span class="metric-value green">R$4.200</span></div>
+          <div class="metric-row"><span class="metric-label">Atendimento inicial</span><span class="metric-value green">Automatizado</span></div>
+          <div class="metric-row"><span class="metric-label">Perguntas de qualificação</span><span class="metric-value green">Configuráveis</span></div>
+          <div class="metric-row"><span class="metric-label">Pedidos de aula experimental</span><span class="metric-value blue">Organizados</span></div>
+          <div class="metric-row"><span class="metric-label">Acompanhamento</span><span class="metric-value green">Programável</span></div>
+          <div class="metric-row"><span class="metric-label">Encaminhamento</span><span class="metric-value orange">Para a equipe</span></div>
+          <div class="metric-row"><span class="metric-label">Resultados comerciais</span><span class="metric-value green">Dependem da operação</span></div>
         </div>
         <div style="margin-top:16px;padding:14px;background:var(--primary-muted);border:1px solid var(--primary-border);border-radius:var(--radius);text-align:center">
-          <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:2px">ROI no primeiro mês</div>
-          <div style="font-size:1.9rem;font-weight:800;color:var(--primary)">+43x</div>
-          <div style="font-size:0.72rem;color:var(--text-muted)">retorno sobre o investimento</div>
+          <div style="font-size:0.82rem;color:var(--text-secondary)">O AtendeFIT organiza o atendimento. Volume de matrículas, conversão, economia e retorno variam conforme oferta, equipe, tráfego e processo comercial.</div>
         </div>
         <a href="https://wa.me/5544988385503?text=Quero%20testar%20o%20agente%20da%20academia%20modelo!" target="_blank" rel="noopener"
            style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:var(--whatsapp);color:#fff;font-weight:700;padding:12px;border-radius:var(--radius-full);font-size:0.88rem;min-height:48px;">
-          💬 Testar esse agente agora
+          💬 Testar a demonstração agora
         </a>
       </div>
     </div>
@@ -1966,39 +1921,37 @@ input, select, textarea { font-family: var(--font); }
         <div class="ch-cell">Chatbot Simples</div>
       </div>
       <div class="compare-row"><div class="cr-cell feature">Atendimento 24h/7 dias</div><div class="cr-cell"><span class="cross">✗</span> Não</div><div class="cr-cell atende-col"><span class="check">✓</span> Sim</div><div class="cr-cell"><span class="partial">~</span> Limitado</div></div>
-      <div class="compare-row"><div class="cr-cell feature">Resposta em segundos</div><div class="cr-cell"><span class="cross">✗</span> Não</div><div class="cr-cell atende-col"><span class="check">✓</span> 3 seg</div><div class="cr-cell"><span class="check">✓</span> Sim</div></div>
+      <div class="compare-row"><div class="cr-cell feature">Atendimento automático</div><div class="cr-cell"><span class="cross">✗</span> Não</div><div class="cr-cell atende-col"><span class="check">✓</span> Sim</div><div class="cr-cell"><span class="check">✓</span> Sim</div></div>
       <div class="compare-row"><div class="cr-cell feature">Entende linguagem natural</div><div class="cr-cell"><span class="check">✓</span> Sim</div><div class="cr-cell atende-col"><span class="check">✓</span> Sim</div><div class="cr-cell"><span class="cross">✗</span> Não</div></div>
-      <div class="compare-row"><div class="cr-cell feature">Qualifica leads automaticamente</div><div class="cr-cell"><span class="partial">~</span> Às vezes</div><div class="cr-cell atende-col"><span class="check">✓</span> Sempre</div><div class="cr-cell"><span class="cross">✗</span> Não</div></div>
+      <div class="compare-row"><div class="cr-cell feature">Qualifica leads automaticamente</div><div class="cr-cell"><span class="partial">~</span> Manual</div><div class="cr-cell atende-col"><span class="check">✓</span> Configurável</div><div class="cr-cell"><span class="partial">~</span> Fluxo fixo</div></div>
       <div class="compare-row"><div class="cr-cell feature">Agenda aulas experimentais</div><div class="cr-cell"><span class="partial">~</span> Manual</div><div class="cr-cell atende-col"><span class="check">✓</span> Auto</div><div class="cr-cell"><span class="cross">✗</span> Não</div></div>
       <div class="compare-row"><div class="cr-cell feature">Follow-up automático</div><div class="cr-cell"><span class="cross">✗</span> Esquece</div><div class="cr-cell atende-col"><span class="check">✓</span> Auto</div><div class="cr-cell"><span class="cross">✗</span> Não</div></div>
-      <div class="compare-row"><div class="cr-cell feature">Escala sem limite</div><div class="cr-cell"><span class="cross">✗</span> 1 pessoa</div><div class="cr-cell atende-col"><span class="check">✓</span> Ilimitado</div><div class="cr-cell"><span class="partial">~</span> Limitado</div></div>
-      <div class="compare-row"><div class="cr-cell feature">Custo mensal</div><div class="cr-cell">R$2k–5k</div><div class="cr-cell atende-col" style="color:var(--primary);font-weight:700">Sob medida</div><div class="cr-cell">R$300–800</div></div>
+      <div class="compare-row"><div class="cr-cell feature">Capacidade de atendimento</div><div class="cr-cell"><span class="partial">~</span> Depende da equipe</div><div class="cr-cell atende-col"><span class="check">✓</span> Conforme o plano</div><div class="cr-cell"><span class="partial">~</span> Conforme fornecedor</div></div>
+      <div class="compare-row"><div class="cr-cell feature">Investimento</div><div class="cr-cell">Depende da equipe</div><div class="cr-cell atende-col" style="color:var(--primary);font-weight:700">Proposta personalizada</div><div class="cr-cell">Conforme fornecedor</div></div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- VALIDATION POINTS -->
 <section class="section proof-section" id="depoimentos">
   <div class="section-inner">
     <div class="text-center">
-      <div class="section-label">💬 Donos de Academia Falam</div>
-      <h2 class="section-title">Quem usou, <span class="hl">não volta atrás</span></h2>
+      <div class="section-label">🧪 Valide antes da proposta</div>
+      <h2 class="section-title">O que observar na <span class="hl">demonstração</span></h2>
+      <p class="section-desc">A prova disponível hoje é o funcionamento do agente modelo. Depoimentos e resultados só serão publicados quando houver autorização e documentação.</p>
     </div>
     <div class="testimonials-grid">
       <div class="testimonial-card reveal">
-        <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="tc-text">"Antes eu perdia leads todo fim de semana. Hoje o AtendeFIT agenda as experimentais enquanto eu durmo. <strong>No primeiro mês já paguei o investimento de volta.</strong>"</div>
-        <div class="tc-author"><div class="tc-avatar">RC</div><div><div class="tc-name">Roberto C.</div><div class="tc-role">Dono de academia — Maringá/PR</div></div></div>
+        <div class="tc-author"><div class="tc-avatar">01</div><div><div class="tc-name">Qualidade da conversa</div><div class="tc-role">Teste perguntas reais da sua recepção</div></div></div>
+        <div class="tc-text">Observe se o agente entende a intenção, responde com clareza e evita inventar informações fora da base cadastrada.</div>
       </div>
       <div class="testimonial-card reveal">
-        <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="tc-text">"Minha recepcionista ficava sobrecarregada. Com o AtendeFIT ela só faz o que importa. <strong>O agente atende 300+ mensagens por dia sem errar uma.</strong>"</div>
-        <div class="tc-author"><div class="tc-avatar">ML</div><div><div class="tc-name">Mariana L.</div><div class="tc-role">Proprietária — Academia FitForce</div></div></div>
+        <div class="tc-author"><div class="tc-avatar">02</div><div><div class="tc-name">Qualificação do contato</div><div class="tc-role">Veja quais dados o fluxo coleta</div></div></div>
+        <div class="tc-text">Avalie como o agente identifica objetivo, interesse e necessidade antes de sugerir um plano ou encaminhamento.</div>
       </div>
       <div class="testimonial-card reveal">
-        <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="tc-text">"Implementei em 1 dia. No mês seguinte tive <strong>+34 novas matrículas de leads que antes eu perdia</strong> por falta de resposta rápida. Melhor investimento que fiz."</div>
-        <div class="tc-author"><div class="tc-avatar">JP</div><div><div class="tc-name">João Pedro S.</div><div class="tc-role">CEO — Rede Top Fit</div></div></div>
+        <div class="tc-author"><div class="tc-avatar">03</div><div><div class="tc-name">Próximo passo</div><div class="tc-role">Confirme como a equipe assume</div></div></div>
+        <div class="tc-text">Entenda como pedidos de aula, dúvidas fora do escopo e oportunidades podem ser organizados para atendimento humano.</div>
       </div>
     </div>
   </div>
@@ -2010,35 +1963,35 @@ input, select, textarea { font-family: var(--font); }
     <div class="text-center">
       <div class="section-label">📦 Planos</div>
       <h2 class="section-title">Solução <span class="hl">sob medida</span> para a sua academia</h2>
-      <p class="section-desc">Cada academia tem um perfil diferente. Por isso apresentamos a proposta ideal durante a conversa — sem surpresas.</p>
+      <p class="section-desc">Cada academia tem volume, canais e integrações diferentes. O investimento, os limites e o prazo de implantação são apresentados depois de um diagnóstico.</p>
     </div>
     <div class="pricing-note">
-      💡 Teste o agente gratuitamente. Depois apresentamos <strong>a proposta ideal para o seu perfil.</strong>
+      💡 A demonstração no agente modelo é gratuita. <strong>Ela não inicia assinatura, cobrança ou período de teste da plataforma.</strong>
     </div>
     <div class="pricing-grid">
       <div class="price-card reveal">
         <div class="plan-icon">🤖</div>
         <div class="plan-name">Essencial</div>
         <div class="plan-title">Atendimento IA</div>
-        <div class="plan-desc">Para academias que querem começar a automatizar e nunca mais perder um lead fora do horário.</div>
+        <div class="plan-desc">Para academias que querem começar a organizar o atendimento automático fora e dentro do horário comercial.</div>
         <div class="plan-cta-area"><div class="plan-cta-label">Investimento</div><div class="plan-cta-value">Saiba durante a conversa 💬</div></div>
         <div class="plan-divider"></div>
         <div class="plan-features">
           <div class="plan-feature"><span class="pf-check">✓</span>Agente de IA no WhatsApp 24/7</div>
-          <div class="plan-feature"><span class="pf-check">✓</span>Resposta em menos de 3 segundos</div>
+          <div class="plan-feature"><span class="pf-check">✓</span>Atendimento automático após o recebimento</div>
           <div class="plan-feature"><span class="pf-check">✓</span>Qualificação automática de leads</div>
           <div class="plan-feature"><span class="pf-check">✓</span>FAQ completo da sua academia</div>
-          <div class="plan-feature"><span class="pf-check">✓</span>Implantado em até 24h</div>
+          <div class="plan-feature"><span class="pf-check">✓</span>Prazo de implantação definido na proposta</div>
         </div>
         <a href="#capture" class="btn-plan btn-plan-outline">📋 Quero uma proposta</a>
-        <div class="plan-guarantee">Teste grátis disponível</div>
+        <div class="plan-guarantee">Demonstração gratuita disponível</div>
       </div>
       <div class="price-card featured reveal">
-        <div class="popular-badge">🔥 Mais Escolhido</div>
+        <div class="popular-badge">Atendimento + Agenda</div>
         <div class="plan-icon">🚀</div>
         <div class="plan-name">Crescimento</div>
         <div class="plan-title">Atendimento + Agenda</div>
-        <div class="plan-desc">Para academias sérias que querem encher a agenda de experimentais e converter no automático.</div>
+        <div class="plan-desc">Para academias que querem conectar atendimento, pedidos de aula experimental e acompanhamento.</div>
         <div class="plan-cta-area"><div class="plan-cta-label">Investimento</div><div class="plan-cta-value">Saiba durante a conversa 💬</div></div>
         <div class="plan-divider"></div>
         <div class="plan-features">
@@ -2050,7 +2003,7 @@ input, select, textarea { font-family: var(--font); }
           <div class="plan-feature"><span class="pf-check">✓</span>Suporte prioritário</div>
         </div>
         <a href="#capture" class="btn-plan btn-plan-primary">📋 Quero este plano</a>
-        <div class="plan-guarantee">Implantação sob medida incluída</div>
+        <div class="plan-guarantee">Escopo confirmado na proposta</div>
       </div>
       <div class="price-card reveal">
         <div class="plan-icon">🏆</div>
@@ -2064,8 +2017,8 @@ input, select, textarea { font-family: var(--font); }
           <div class="plan-feature"><span class="pf-check">✓</span>Múltiplas unidades e números</div>
           <div class="plan-feature"><span class="pf-check">✓</span>Dashboard gerencial unificado</div>
           <div class="plan-feature"><span class="pf-check">✓</span>Personalização avançada</div>
-          <div class="plan-feature"><span class="pf-check">✓</span>Gerente de conta dedicado</div>
-          <div class="plan-feature"><span class="pf-check">✓</span>SLA 99.9% de disponibilidade</div>
+          <div class="plan-feature"><span class="pf-check">✓</span>Acompanhamento conforme o projeto</div>
+          <div class="plan-feature"><span class="pf-check">✓</span>Níveis de serviço definidos na proposta</div>
         </div>
         <a href="#capture" class="btn-plan btn-plan-outline">📋 Falar com especialista</a>
         <div class="plan-guarantee">Proposta personalizada para redes</div>
@@ -2089,7 +2042,7 @@ input, select, textarea { font-family: var(--font); }
         <div class="capture-bullets">
           <div class="capture-bullet">
             <div class="cb-icon">💬</div>
-            <div class="cb-text"><strong>Teste grátis agora</strong> — mande uma mensagem para (44) 99881-3718 e interaja com o agente como se fosse um lead.</div>
+            <div class="cb-text"><strong>Demonstração gratuita</strong> — mande uma mensagem para o agente modelo e interaja como se fosse um interessado. Não há assinatura automática.</div>
           </div>
           <div class="capture-bullet">
             <div class="cb-icon">📋</div>
@@ -2097,7 +2050,7 @@ input, select, textarea { font-family: var(--font); }
           </div>
           <div class="capture-bullet">
             <div class="cb-icon">🚀</div>
-            <div class="cb-text"><strong>Implantação em 24 horas</strong> — se fizer sentido, seu agente pode estar ativo amanhã no mesmo número que você já usa.</div>
+            <div class="cb-text"><strong>Implantação planejada</strong> — prazo, número utilizado, integrações e responsabilidades são definidos na proposta.</div>
           </div>
         </div>
         <a href="https://wa.me/5544988385503?text=Olá!%20Quero%20testar%20o%20agente%20AtendeFIT!" target="_blank" rel="noopener" class="btn-hero-primary" style="display:inline-flex;width:auto">
@@ -2109,7 +2062,7 @@ input, select, textarea { font-family: var(--font); }
         <div id="formContent">
           <div class="form-header">
             <h3>Quero uma <span>proposta para minha academia</span></h3>
-            <p>Preencha abaixo. Retornamos em até 2h no horário comercial via WhatsApp.</p>
+            <p>Preencha abaixo. Nossa equipe entra em contato pelo WhatsApp para entender sua operação.</p>
           </div>
           <form id="captureForm" novalidate>
             <div class="form-group">
@@ -2163,13 +2116,13 @@ input, select, textarea { font-family: var(--font); }
             </button>
           </form>
           <div class="form-footer">
-            🔒 Seus dados são usados apenas para contato. Sem spam, sem compartilhamento.
+            🔒 Seus dados são usados para responder à solicitação, conforme nossa <a href="../politica-de-privacidade.html" style="color:var(--primary)">Política de Privacidade</a>.
           </div>
         </div>
         <div class="form-success" id="formSuccess">
           <div class="success-icon">🎉</div>
           <h3>Recebido! <span>Até logo.</span></h3>
-          <p>Nossa equipe vai entrar em contato com você pelo WhatsApp em até 2h no horário comercial com a proposta personalizada.</p>
+          <p>Nossa equipe vai entrar em contato com você pelo WhatsApp para preparar uma proposta personalizada.</p>
           <p style="margin-top:6px">Enquanto isso, <strong style="color:var(--text-primary)">teste o agente ao vivo</strong> e veja o que ele vai fazer pela sua academia 👇</p>
           <a href="https://wa.me/5544988385503?text=Olá!%20Acabei%20de%20preencher%20o%20formulário%20e%20quero%20testar%20o%20agente!" target="_blank" rel="noopener" class="btn-wpp-success">
             💬 Testar o Agente Agora
@@ -2190,11 +2143,11 @@ input, select, textarea { font-family: var(--font); }
     </div>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-trigger">Preciso trocar o número do WhatsApp da academia?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Não! O AtendeFIT funciona no mesmo número que sua academia já usa. Sem migração, sem complicação.</div></div></div>
-      <div class="faq-item"><button class="faq-trigger">Em quanto tempo o agente fica ativo?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Em menos de 24 horas. Após a contratação, nossa equipe configura e personaliza o agente com as informações da sua academia.</div></div></div>
+      <div class="faq-item"><button class="faq-trigger">Em quanto tempo o agente fica ativo?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">O prazo depende do volume de informações, integrações e validações necessárias. A previsão é apresentada na proposta antes da contratação.</div></div></div>
       <div class="faq-item"><button class="faq-trigger">O agente substitui minha recepcionista?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Não substitui — libera. O agente cuida do atendimento repetitivo, deixando sua equipe focada no relacionamento e fechamento.</div></div></div>
       <div class="faq-item"><button class="faq-trigger">O que acontece com perguntas fora do escopo?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">O agente responde com base no que foi cadastrado. Para perguntas fora do escopo, ele encaminha para sua equipe de forma educada.</div></div></div>
-      <div class="faq-item"><button class="faq-trigger">Posso testar antes de contratar?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Sim! Mande uma mensagem para (44) 99881-3718 no WhatsApp agora. É o agente real da academia modelo — você vê funcionando antes de qualquer decisão.</div></div></div>
-      <div class="faq-item"><button class="faq-trigger">O investimento vale para qualquer tamanho de academia?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Sim. Atendemos desde academias independentes com 80 alunos até redes com múltiplas unidades. A proposta é sempre personalizada para o seu perfil.</div></div></div>
+      <div class="faq-item"><button class="faq-trigger">Posso testar antes de contratar?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">Sim. Você pode conversar gratuitamente com o agente modelo antes de solicitar uma proposta. Essa demonstração não inicia assinatura ou cobrança.</div></div></div>
+      <div class="faq-item"><button class="faq-trigger">Como o investimento é definido?<span class="faq-arrow">▼</span></button><div class="faq-body"><div class="faq-answer">A proposta considera volume de contatos, quantidade de unidades, recursos, integrações, implantação e suporte necessário. Tudo é apresentado antes da contratação.</div></div></div>
     </div>
     <div style="text-align:center;margin-top:44px;padding:32px 24px;background:var(--bg-elevated);border:1px solid var(--border-light);border-radius:var(--radius-lg);">
       <div style="font-size:1.15rem;font-weight:800;margin-bottom:9px">Ainda tem dúvidas? <span style="color:var(--primary)">Fale direto com a gente.</span></div>
@@ -2216,7 +2169,7 @@ input, select, textarea { font-family: var(--font); }
       é um lead indo para <span class="hl">seu concorrente.</span>
     </h2>
     <p class="cta-sub">
-      Mais de 200 academias já pararam de perder leads à noite e nos fins de semana. O agente está rodando ao vivo agora. Teste antes de qualquer compromisso.
+      Converse com o agente modelo e avalie a experiência antes de solicitar uma proposta para sua academia.
     </p>
     <div class="cta-actions">
       <a href="https://wa.me/5544988385503?text=Olá!%20Quero%20testar%20o%20agente%20AtendeFIT%20agora!" target="_blank" rel="noopener" class="btn-wpp">
@@ -2227,8 +2180,8 @@ input, select, textarea { font-family: var(--font); }
       <div class="cta-guarantee">
         <span>Sem cadastro</span>
         <span>Agente ao vivo</span>
-        <span>Implantado em 24h</span>
-        <span>Sob medida</span>
+        <span>Sem cobrança automática</span>
+        <span>Proposta sob medida</span>
       </div>
     </div>
     <div class="test-box">
@@ -2246,7 +2199,7 @@ input, select, textarea { font-family: var(--font); }
         <img src="logo-Svg.svg" alt="AtendeFIT" class="footer-logo"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
         <span style="display:none;font-size:1.2rem;font-weight:900;color:var(--primary)">Atende<span style="color:#fff">FIT</span></span>
-        <p class="footer-tagline">O agente de IA que transforma seu WhatsApp em uma máquina de matrículas — 24h por dia, 7 dias por semana.</p>
+        <p class="footer-tagline">Agente de IA para organizar atendimento, pedidos de aula e follow-up no WhatsApp.</p>
       </div>
       <div class="footer-links-group">
         <h5>Produto</h5>
@@ -2254,7 +2207,7 @@ input, select, textarea { font-family: var(--font); }
           <li><a href="#como-funciona">Como Funciona</a></li>
           <li><a href="#vantagens">Vantagens</a></li>
           <li><a href="#planos">Planos</a></li>
-          <li><a href="#caso">Caso Real</a></li>
+          <li><a href="#caso">Fluxo Demonstrativo</a></li>
         </ul>
       </div>
       <div class="footer-links-group">
@@ -2274,11 +2227,9 @@ input, select, textarea { font-family: var(--font); }
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 AtendeFIT. Todos os direitos reservados.</div>
+      <div class="footer-copy">© 2026 AtendeFIT. Todos os direitos reservados.</div>
       <div class="footer-badge">
-        <img src="ICONE.svg" alt="" style="height:14px;width:auto"
-             onerror="this.outerHTML='🤖'">
-        Powered by IA
+        <a href="../termos-de-uso.html">Termos</a> · <a href="../politica-de-privacidade.html">Privacidade</a>
       </div>
     </div>
   </div>
@@ -2292,8 +2243,6 @@ input, select, textarea { font-family: var(--font); }
     <span>Testar Agora</span>
   </a>
 </div>
-
-<div class="toast-container" id="toastContainer"></div>
 
 <script>
 /* ============================================================
@@ -2562,39 +2511,6 @@ _Enviado via formulário AtendeFIT_`;
 });
 
 // ============================================================
-// TOAST NOTIFICATIONS
-// ============================================================
-const toastContainer = document.getElementById('toastContainer');
-const toastsData = [
-  { icon:'📅', title:'Academia VitaFit',  msg:'agendou 5 experimentais hoje via IA' },
-  { icon:'⚡', title:'Carlos M.',         msg:'recebeu resposta em 3 segundos às 23h' },
-  { icon:'🏆', title:'Academia Strong',   msg:'converteu 3 matrículas esta semana' },
-  { icon:'🎉', title:'Top Gym',           msg:'ativou o AtendeFIT hoje' },
-  { icon:'💪', title:'Rede FitMax',       msg:'+47 novas matrículas no mês' },
-];
-let toastIdx = 0;
-
-function showToast() {
-  const d = toastsData[toastIdx % toastsData.length];
-  const t = document.createElement('div');
-  t.className = 'toast';
-  t.innerHTML = `<span class="toast-icon">${d.icon}</span>
-    <div class="toast-text"><strong>${d.title}</strong>${d.msg}</div>`;
-  toastContainer.appendChild(t);
-  setTimeout(() => {
-    t.style.transition = 'all 0.4s ease';
-    t.style.opacity = '0';
-    t.style.transform = 'translateX(-16px)';
-    setTimeout(() => { if (t.parentNode) t.remove(); }, 400);
-  }, 5000);
-  toastIdx++;
-}
-// Toasts só em desktop (evita poluição no mobile)
-if (window.innerWidth > 768) {
-  setTimeout(() => { showToast(); setInterval(showToast, 9000); }, 6000);
-}
-
-// ============================================================
 // SCROLL SPY
 // ============================================================
 const spySections = document.querySelectorAll('section[id]');
@@ -2643,5 +2559,6 @@ document.querySelectorAll('input, select').forEach(el => {
   });
 });
 </script>
+<script src="/assets/privacy-consent.js" defer></script>
 </body>
 </html>
