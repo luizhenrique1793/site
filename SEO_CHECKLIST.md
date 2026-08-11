@@ -15,28 +15,112 @@ Se quiser, antes da auditoria preencha o bloco abaixo com os dados do projeto.
 ## CONTEXTO DO PROJETO
 
 **Domínio principal:**  
-`https://DOMINIO.com.br`
+`https://automaleads.com/`
 
 **Empresa:**  
-`NOME DA EMPRESA`
+`AutomaLeads`
 
 **Cidade ou região principal:**  
-`CIDADE / ESTADO`
+`Maringá, Paraná, Brasil`
 
 **Segmento:**  
-`SEGMENTO DA EMPRESA`
+`Tecnologia, inteligência artificial, automação comercial, atendimento e vendas pelo WhatsApp`
 
-**Principais serviços:**  
-- Serviço 1
-- Serviço 2
-- Serviço 3
+**Descrição resumida do negócio:**  
+`Plataforma e empresa de tecnologia focada em agentes de IA para WhatsApp, CRM, automações e integrações que ajudam empresas a atender mais rápido, qualificar leads, organizar oportunidades e conectar conversas aos processos comerciais.`
 
-**Páginas ou serviços estratégicos para SEO:**  
-- Página ou serviço 1
-- Página ou serviço 2
-- Página ou serviço 3
+**Principais serviços e soluções:**  
 
----
+- Agentes de IA para atendimento e vendas pelo WhatsApp
+- Automação de atendimento comercial
+- Qualificação automática de leads
+- CRM de oportunidades integrado ao WhatsApp
+- Follow-up e reativação de leads
+- Campanhas e disparos segmentados pelo WhatsApp
+- Integrações com APIs e sistemas próprios
+- Automações com n8n
+- Integrações com Make
+- Integrações com Google Sheets
+- Implementações e automações personalizadas
+- Sites e landing pages integrados ao WhatsApp, CRM e automações
+- Tráfego pago e funis de vendas
+- Diagnóstico e estruturação de processos comerciais
+
+**Principais problemas que as soluções resolvem:**  
+
+- demora para responder leads no WhatsApp
+- perda de oportunidades fora do horário comercial
+- leads que esfriam por falta de acompanhamento
+- falta de qualificação dos contatos
+- informações espalhadas entre WhatsApp, planilhas e sistemas
+- follow-ups esquecidos
+- falta de organização do processo comercial
+- tarefas manuais repetitivas
+- falta de integração entre atendimento, CRM e sistemas
+- dificuldade para transformar conversas em oportunidades organizadas
+
+**Público principal:**  
+
+- empresas que utilizam WhatsApp como canal de atendimento ou vendas
+- equipes comerciais
+- empresas que recebem leads através de anúncios
+- empresas que trabalham com agendamentos e orçamentos
+- negócios que precisam automatizar atendimento
+- empresas que precisam integrar WhatsApp, CRM, APIs e sistemas
+- empresas que querem estruturar melhor o acompanhamento de leads
+
+**Páginas estratégicas para SEO:**  
+
+- [Página inicial](https://automaleads.com/)
+- [Campanhas e disparos no WhatsApp](https://automaleads.com/campanhas-whatsapp.html)
+- [CRM, APIs e integrações](https://automaleads.com/crm-integracoes.html)
+- [Sites e landing pages integrados](https://automaleads.com/sites-integrados.html)
+- [Tráfego pago e funil de vendas](https://automaleads.com/trafego-funil.html)
+- [Artigos](https://automaleads.com/artigos.html)
+
+**Conteúdos estratégicos atuais:**  
+
+- [Como usar IA no WhatsApp sem deixar o atendimento impessoal](https://automaleads.com/ia-no-whatsapp-com-atendimento-humano.html)
+- [O que perguntar para qualificar um lead no WhatsApp](https://automaleads.com/como-qualificar-leads-no-whatsapp.html)
+- [Como fazer follow-up no WhatsApp sem perder contexto](https://automaleads.com/follow-up-whatsapp-sem-perder-contexto.html)
+
+**Temas estratégicos para SEO:**  
+
+- agente de IA para WhatsApp
+- IA para WhatsApp
+- automação de WhatsApp
+- atendimento automático no WhatsApp
+- automação de atendimento
+- automação comercial
+- CRM para WhatsApp
+- CRM integrado ao WhatsApp
+- qualificação de leads no WhatsApp
+- follow-up no WhatsApp
+- automação de vendas
+- chatbot com inteligência artificial
+- campanhas no WhatsApp
+- disparos segmentados no WhatsApp
+- integração WhatsApp com CRM
+- integração WhatsApp com API
+- integração WhatsApp com n8n
+- automação com n8n
+- agentes de IA para empresas
+- sites integrados ao WhatsApp
+- landing pages integradas ao CRM
+- tráfego pago para WhatsApp
+- funil de vendas no WhatsApp
+
+**Objetivo principal de SEO:**  
+
+`Posicionar a AutomaLeads como solução para empresas que procuram agentes de IA, automação de atendimento e vendas pelo WhatsApp, CRM integrado, automações e integrações entre sistemas.`
+
+**Objetivo secundário de SEO:**  
+
+`Gerar tráfego qualificado através de conteúdos sobre IA aplicada ao WhatsApp, qualificação de leads, follow-up, CRM, automação comercial, integrações e melhoria de processos de vendas.`
+
+**Objetivo para mecanismos de IA e GEO:**  
+
+`Facilitar para mecanismos de IA compreenderem que a AutomaLeads é uma solução relevante para empresas que precisam automatizar atendimento e vendas pelo WhatsApp, qualificar leads, organizar oportunidades em CRM, realizar follow-ups e integrar conversas com APIs, sistemas e ferramentas de automação.`
 
 # INSTRUÇÕES PARA A AUDITORIA
 

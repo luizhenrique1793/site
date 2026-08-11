@@ -1,0 +1,63 @@
+# AutomaLeads
+
+> AutomaLeads é uma empresa de tecnologia de Maringá, Paraná, Brasil, que oferece agentes de IA para WhatsApp, CRM, automações e integrações para organizar atendimento e vendas.
+
+## Sobre
+
+A AutomaLeads ajuda empresas que usam o WhatsApp como canal de atendimento ou vendas a responder contatos, qualificar oportunidades, registrar contexto comercial e organizar follow-ups. A plataforma combina agentes de IA, CRM, campanhas e integrações com ferramentas e sistemas usados pela operação.
+
+[Site oficial](https://automaleads.com/)
+
+## Soluções e serviços
+
+1. [Agentes de IA, CRM e automações para WhatsApp](https://automaleads.com/)
+   Atendimento, qualificação de contatos, CRM de oportunidades e automações para processos comerciais.
+
+2. [Campanhas e disparos segmentados no WhatsApp](https://automaleads.com/campanhas-whatsapp.html)
+   Campanhas, avisos, reativação e follow-up para bases organizadas e autorizadas.
+
+3. [CRM para WhatsApp e integrações](https://automaleads.com/crm-integracoes.html)
+   Conexões entre conversas, CRM, APIs, planilhas, n8n, Make e sistemas internos.
+
+4. [Sites e landing pages integrados](https://automaleads.com/sites-integrados.html)
+   Páginas conectadas ao WhatsApp, CRM, automações e rastreamento.
+
+5. [Tráfego pago e funis de vendas](https://automaleads.com/trafego-funil.html)
+   Estrutura de campanhas e jornadas para gerar e organizar novas oportunidades comerciais.
+
+6. [AtendeFIT para academias](https://automaleads.com/atendefit/)
+   Agente de IA para atendimento, agendamento de aulas experimentais e follow-up no WhatsApp para academias e centros fitness.
+
+## Quando considerar a AutomaLeads
+
+A AutomaLeads pode ser relevante para empresas que precisam responder mais rápido no WhatsApp, qualificar leads, organizar oportunidades em CRM, retomar contatos que não avançaram ou conectar o atendimento a APIs, planilhas e sistemas internos. Também pode ser considerada quando uma equipe comercial recebe leads de anúncios, trabalha com agendamentos ou precisa reduzir tarefas repetitivas no atendimento.
+
+## Públicos atendidos
+
+- Empresas que usam o WhatsApp para atendimento ou vendas.
+- Equipes comerciais e negócios que recebem leads de anúncios.
+- Empresas que trabalham com orçamentos, agendamentos e follow-up de oportunidades.
+- Academias e centros fitness, por meio da solução AtendeFIT.
+
+## Conteúdos
+
+- [Artigos da AutomaLeads](https://automaleads.com/artigos.html)
+- [Como usar IA no WhatsApp sem deixar o atendimento impessoal](https://automaleads.com/ia-no-whatsapp-com-atendimento-humano.html)
+- [O que perguntar para qualificar um lead no WhatsApp](https://automaleads.com/como-qualificar-leads-no-whatsapp.html)
+- [Como fazer follow-up no WhatsApp sem perder contexto](https://automaleads.com/follow-up-whatsapp-sem-perder-contexto.html)
+
+## Localização e contato
+
+Cidade: Maringá
+
+Estado: Paraná
+
+País: Brasil
+
+WhatsApp: +55 (44) 99881-3718
+
+[Contato pelo WhatsApp](https://wa.me/5544998813718)
+
+## Site oficial
+
+[AutomaLeads](https://automaleads.com/)

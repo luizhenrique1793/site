@@ -5,13 +5,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18138072784"></script>
 <script>gtag('js',new Date());gtag('config','AW-18138072784');</script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- SEO PRIMÁRIO -->
 <title>AtendeFIT — Agente de IA para academias no WhatsApp</title>
 <meta name="description" content="Atenda interessados no WhatsApp, organize aulas experimentais e faça follow-up com um agente de IA configurado para a rotina da sua academia.">
-<meta name="keywords" content="agente de IA academia, chatbot academia, automação academia, WhatsApp academia, atendimento automatizado academia, agendamento aulas experimentais, AtendeFIT, AutomaLeads academia, gestão academia, matrícula automática">
 <meta name="author" content="AutomaLeads">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://automaleads.com/atendefit/">
@@ -2543,21 +2542,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ============================================================
-// PREVENT ZOOM ON INPUT FOCUS (iOS fix — font-size:16px já
-// resolve, mas garantindo via meta viewport)
-// ============================================================
-document.querySelectorAll('input, select').forEach(el => {
-  el.addEventListener('focus', () => {
-    // Force no-zoom in iOS via meta
-    const meta = document.querySelector('meta[name="viewport"]');
-    if (meta) meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0';
-  });
-  el.addEventListener('blur', () => {
-    const meta = document.querySelector('meta[name="viewport"]');
-    if (meta) meta.content = 'width=device-width, initial-scale=1.0';
-  });
-});
 </script>
 <script src="/assets/privacy-consent.js" defer></script>
 </body>
