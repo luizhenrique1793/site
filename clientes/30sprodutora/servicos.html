@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serviços | 30 Segundos Produtora</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+  tailwind.config = { theme: { extend: { colors: { signal: '#e30613', charcoal: '#121212', ink: '#000000', mist: '#c6c6c7' }, fontFamily: { display: ['Montserrat'], body: ['Hanken Grotesk'] } } } };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #000; }
+  ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #e30613; }
+  body { background: #000; color: #fff; }
+  .brand-mark { display:block; flex:0 0 128px; height:91px; width:128px; }
+  .brand-logo { display:block; height:100%; object-fit:contain; width:100%; }
+  .service-image { background-position:center; background-size:cover; }
+  .services-hero-image { background: linear-gradient(90deg, #000 8%, rgba(0,0,0,.5) 60%, #000), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2000&q=85') center/cover; }
+  .whatsapp-float { align-items:center; background:#25d366; border:1px solid rgba(255,255,255,.35); bottom:24px; box-shadow:0 10px 30px rgba(0,0,0,.35); display:flex; height:56px; justify-content:center; position:fixed; right:24px; transition:transform .2s ease, background .2s ease; width:56px; z-index:60; }
+  .whatsapp-float:hover { background:#1fb85a; transform:translateY(-3px); }
+  .site-nav-inner { max-width:none !important; padding-left:max(24px, 8.7vw) !important; padding-right:max(24px, 8.7vw) !important; }
+  .site-nav-links a, .site-nav-cta { font-family:'Hanken Grotesk', sans-serif; font-size:11px !important; font-weight:700; letter-spacing:.12em !important; line-height:14px; }
+  .site-nav-links a { display:block; height:14px; }
+  .site-nav-cta { height:48px; justify-content:center; width:275px; }
+  @media (min-width:768px) { .site-nav-inner { display:grid !important; grid-template-columns:1fr auto 1fr; } .site-nav-links { justify-self:center; } .site-nav-cta { justify-self:end; } }
+</style>
+</head>
+<body class="font-body antialiased">
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-md">
+  <div class="site-nav-inner mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 md:px-20">
+    <a aria-label="30 Segundos - Início" class="brand-mark" href="index.html"><img alt="30 Segundos" class="brand-logo" src="logo.png"/></a>
+    <div class="site-nav-links hidden items-center gap-8 md:flex">
+      <a class="text-[11px] font-bold tracking-[.12em] text-white hover:text-signal" href="index.html#trabalhos">TRABALHOS</a>
+      <a aria-current="page" class="text-[11px] font-bold tracking-[.12em] text-signal" href="servicos.html">SERVIÇOS</a>
+      <a class="text-[11px] font-bold tracking-[.12em] text-white hover:text-signal" href="insights.html">INSIGHTS</a>
+      <a class="text-[11px] font-bold tracking-[.12em] text-white hover:text-signal" href="index.html#sobre">SOBRE NÓS</a>
+    </div>
+    <a class="site-nav-cta hidden items-center gap-3 bg-signal px-5 py-3 text-[11px] font-bold tracking-[.12em] text-white transition-colors hover:bg-white hover:text-black md:inline-flex" href="index.html#contato">VAMOS CONVERSAR <span class="material-symbols-outlined text-base">arrow_outward</span></a>
+    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="text-white md:hidden" id="mobile-menu-button" type="button"><span class="material-symbols-outlined text-3xl">menu</span></button>
+  </div>
+  <div class="hidden border-t border-white/10 bg-black px-6 py-6 md:hidden" id="mobile-menu"><div class="flex flex-col gap-5"><a class="text-xs font-bold uppercase tracking-[.14em] text-white" data-mobile-menu-link="" href="index.html#trabalhos">Trabalhos</a><a class="text-xs font-bold uppercase tracking-[.14em] text-white" data-mobile-menu-link="" href="servicos.html">Serviços</a><a class="text-xs font-bold uppercase tracking-[.14em] text-white" data-mobile-menu-link="" href="insights.html">Insights</a><a class="text-xs font-bold uppercase tracking-[.14em] text-white" data-mobile-menu-link="" href="index.html#sobre">Sobre nós</a><a class="w-fit bg-signal px-5 py-3 text-xs font-bold uppercase tracking-[.14em] text-white" data-mobile-menu-link="" href="index.html#contato">Fale conosco</a></div></div>
+</nav>
+<main>
+  <header class="relative overflow-hidden border-b border-white/15 px-6 pb-20 pt-40 md:px-16 md:pb-28 md:pt-52">
+    <div class="services-hero-image absolute inset-0 opacity-35"></div>
+    <div class="relative mx-auto grid max-w-[1440px] grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
+      <div class="lg:col-span-8"><p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-signal">SERVIÇOS / 30 SEGUNDOS</p><h1 class="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">Do briefing ao<br/><em class="text-signal">último frame.</em></h1></div>
+      <p class="max-w-md text-lg leading-8 text-mist lg:col-span-4">Criamos filmes e campanhas com uma equipe que conecta estratégia, direção criativa e execução cinematográfica.</p>
+    </div>
+  </header>
+  <section class="mx-auto max-w-[1440px] px-6 py-20 md:px-16 md:py-32">
+    <div class="mb-12 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end"><div class="lg:col-span-7"><p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">FORMATOS</p><h2 class="font-display text-4xl font-bold leading-tight md:text-6xl">Uma produção do<br/>tamanho da sua ideia.</h2></div><p class="max-w-md text-base leading-7 text-mist lg:col-span-4 lg:col-start-9">Escolha o formato que atende ao momento da marca. Nós montamos o time, a linguagem e o plano de produção.</p></div>
+    <div class="divide-y divide-white/15 border-y border-white/15">
+      <article class="group grid grid-cols-1 gap-6 py-10 md:grid-cols-12 md:items-center md:gap-8">
+        <div class="md:col-span-1"><span class="text-xs font-bold tracking-[.16em] text-signal">01</span></div><div class="md:col-span-3"><h3 class="font-display text-2xl font-bold">Vídeos Publicitários</h3></div><p class="leading-7 text-mist md:col-span-4">Campanhas de produto e marca feitas para televisão, mídia digital, cinema e performance.</p><div class="md:col-span-3"><p class="mb-2 text-xs font-bold uppercase tracking-[.14em] text-white">Entregáveis</p><p class="text-sm leading-6 text-mist">Filme principal, cutdowns, versões verticais e peças de social.</p></div><span class="material-symbols-outlined text-signal md:col-span-1 md:text-right">arrow_outward</span>
+      </article>
+      <article class="group grid grid-cols-1 gap-6 py-10 md:grid-cols-12 md:items-center md:gap-8">
+        <div class="md:col-span-1"><span class="text-xs font-bold tracking-[.16em] text-signal">02</span></div><div class="md:col-span-3"><h3 class="font-display text-2xl font-bold">Filmes Institucionais</h3></div><p class="leading-7 text-mist md:col-span-4">Histórias que traduzem propósito, cultura e impacto para públicos internos, clientes e parceiros.</p><div class="md:col-span-3"><p class="mb-2 text-xs font-bold uppercase tracking-[.14em] text-white">Entregáveis</p><p class="text-sm leading-6 text-mist">Filme manifesto, entrevistas, captação documental e versões de apoio.</p></div><span class="material-symbols-outlined text-signal md:col-span-1 md:text-right">arrow_outward</span>
+      </article>
+      <article class="group grid grid-cols-1 gap-6 py-10 md:grid-cols-12 md:items-center md:gap-8">
+        <div class="md:col-span-1"><span class="text-xs font-bold tracking-[.16em] text-signal">03</span></div><div class="md:col-span-3"><h3 class="font-display text-2xl font-bold">Vídeos Corporativos</h3></div><p class="leading-7 text-mist md:col-span-4">Comunicação clara e confiável para vendas, treinamento, eventos e relacionamento com o mercado.</p><div class="md:col-span-3"><p class="mb-2 text-xs font-bold uppercase tracking-[.14em] text-white">Entregáveis</p><p class="text-sm leading-6 text-mist">Apresentações, cases, treinamentos e comunicação interna.</p></div><span class="material-symbols-outlined text-signal md:col-span-1 md:text-right">arrow_outward</span>
+      </article>
+      <article class="group grid grid-cols-1 gap-6 py-10 md:grid-cols-12 md:items-center md:gap-8">
+        <div class="md:col-span-1"><span class="text-xs font-bold tracking-[.16em] text-signal">04</span></div><div class="md:col-span-3"><h3 class="font-display text-2xl font-bold">Social Content</h3></div><p class="leading-7 text-mist md:col-span-4">Conteúdo nativo para plataformas sociais, com agilidade sem abrir mão de direção e acabamento.</p><div class="md:col-span-3"><p class="mb-2 text-xs font-bold uppercase tracking-[.14em] text-white">Entregáveis</p><p class="text-sm leading-6 text-mist">Reels, séries, entrevistas, bastidores e peças de campanha.</p></div><span class="material-symbols-outlined text-signal md:col-span-1 md:text-right">arrow_outward</span>
+      </article>
+      <article class="group grid grid-cols-1 gap-6 py-10 md:grid-cols-12 md:items-center md:gap-8">
+        <div class="md:col-span-1"><span class="text-xs font-bold tracking-[.16em] text-signal">05</span></div><div class="md:col-span-3"><h3 class="font-display text-2xl font-bold">Timelapse de Obras</h3></div><p class="leading-7 text-mist md:col-span-4">Acompanhamento visual de longa duração que torna evolução, escala e engenharia perceptíveis.</p><div class="md:col-span-3"><p class="mb-2 text-xs font-bold uppercase tracking-[.14em] text-white">Entregáveis</p><p class="text-sm leading-6 text-mist">Captação recorrente, gestão remota e filme de encerramento.</p></div><span class="material-symbols-outlined text-signal md:col-span-1 md:text-right">arrow_outward</span>
+      </article>
+    </div>
+  </section>
+  <section class="border-y border-white/15 bg-charcoal px-6 py-20 md:px-16 md:py-28"><div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start"><div class="lg:col-span-4"><p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">NOSSO PROCESSO</p><h2 class="font-display text-4xl font-bold leading-tight">Clareza antes<br/>da câmera.</h2></div><ol class="grid gap-8 md:grid-cols-3 lg:col-span-8"><li><span class="mb-4 block font-display text-5xl font-bold text-white/20">01</span><h3 class="mb-3 text-lg font-bold">Estratégia</h3><p class="text-sm leading-6 text-mist">Imersão, objetivo, público e a ideia que organiza cada decisão criativa.</p></li><li><span class="mb-4 block font-display text-5xl font-bold text-white/20">02</span><h3 class="mb-3 text-lg font-bold">Produção</h3><p class="text-sm leading-6 text-mist">Roteiro, casting, locação, direção, captação e uma operação sob medida.</p></li><li><span class="mb-4 block font-display text-5xl font-bold text-white/20">03</span><h3 class="mb-3 text-lg font-bold">Finalização</h3><p class="text-sm leading-6 text-mist">Edição, som, cor e versões pensadas para cada canal de distribuição.</p></li></ol></div></section>
+  <section class="px-6 py-24 md:px-16 md:py-32"><div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-10 border border-white/20 p-8 md:flex-row md:items-end md:p-14"><div><p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">PRÓXIMO PROJETO</p><h2 class="font-display text-4xl font-bold leading-tight md:text-6xl">Vamos fazer uma<br/>marca acontecer.</h2></div><a class="inline-flex items-center gap-3 bg-signal px-7 py-5 text-xs font-bold uppercase tracking-[.14em] transition-colors hover:bg-white hover:text-black" href="index.html#contato">Solicitar orçamento <span class="material-symbols-outlined">arrow_outward</span></a></div></section>
+</main>
+<footer class="border-t border-white/15 px-6 py-8 md:px-16"><div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-xs text-mist md:flex-row"><span>© 2024 30 Segundos Produtora</span><span>Produção audiovisual para marcas que querem ser vistas.</span></div></footer>
+<a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank"><span class="material-symbols-outlined text-2xl text-white">chat</span></a>
+<script>
+  const mobileMenuButton = document.querySelector('#mobile-menu-button');
+  const mobileMenu = document.querySelector('#mobile-menu');
+  mobileMenuButton.addEventListener('click', () => { const isOpen = mobileMenuButton.getAttribute('aria-expanded') === 'true'; mobileMenuButton.setAttribute('aria-expanded', String(!isOpen)); mobileMenu.classList.toggle('hidden', isOpen); });
+  document.querySelectorAll('[data-mobile-menu-link]').forEach((link) => link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); mobileMenuButton.setAttribute('aria-expanded', 'false'); }));
+</script>
+</body>
+</html>
