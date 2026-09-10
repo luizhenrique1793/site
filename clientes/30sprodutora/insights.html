@@ -52,16 +52,33 @@
   </div></section>
   <section class="border-y border-white/15 bg-charcoal px-6 py-20 md:px-16"><div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center"><div class="lg:col-span-7"><p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">RECEBA O JORNAL</p><h2 class="font-display text-4xl font-bold leading-tight md:text-5xl">Uma boa referência<br/>no seu e-mail.</h2></div><form class="flex border-b border-white/30 pb-3 lg:col-span-5" id="insights-whatsapp-form"><label class="sr-only" for="email-insights">Seu e-mail</label><input class="w-full border-0 bg-transparent p-0 text-white placeholder:text-mist focus:ring-0" id="email-insights" name="email" placeholder="Seu melhor e-mail" required="" type="email"/><button aria-label="Assinar newsletter" class="text-signal hover:text-white" type="submit"><span class="material-symbols-outlined">arrow_forward</span></button></form></div></section>
 </main>
-<footer class="border-t border-white/15 px-6 py-8 md:px-16"><div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-xs text-mist md:flex-row"><span>© 2024 30 Segundos Produtora</span><span>Produção audiovisual para marcas que querem ser vistas.</span></div></footer>
+<footer class="border-t border-white/15 bg-charcoal px-6 pb-8 pt-40 md:px-20">
+  <div class="mx-auto max-w-[1440px]">
+    <div class="mb-40 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-8">
+      <div><a aria-label="30 Segundos - Início" class="brand-mark mb-6" href="index.html"><img alt="30 Segundos" class="brand-logo" src="logo.png"/></a><p class="max-w-xs text-sm leading-6 text-mist">Produtora de vídeo especializada em projetar autoridade e fortalecer marcas.</p></div>
+      <div><h2 class="mb-5 text-xs font-bold uppercase tracking-[.14em] text-white">Serviços</h2><ul class="space-y-3 text-sm text-mist"><li><a class="transition-colors hover:text-signal" href="servicos.html">Vídeos Publicitários</a></li><li><a class="transition-colors hover:text-signal" href="servicos.html">Filmes Institucionais</a></li><li><a class="transition-colors hover:text-signal" href="servicos.html">Vídeos Corporativos</a></li><li><a class="transition-colors hover:text-signal" href="servicos.html">Social Content</a></li><li><a class="transition-colors hover:text-signal" href="servicos.html">Timelapse de Obras</a></li></ul></div>
+      <div><h2 class="mb-5 text-xs font-bold uppercase tracking-[.14em] text-white">Navegação</h2><ul class="space-y-3 text-sm text-mist"><li><a class="transition-colors hover:text-signal" href="index.html#sobre">Sobre</a></li><li><a class="transition-colors hover:text-signal" href="index.html#trabalhos">Trabalhos</a></li><li><a class="transition-colors hover:text-signal" href="insights.html">Insights</a></li><li><a class="transition-colors hover:text-signal" href="index.html#contato">Contato</a></li></ul></div>
+      <div><h2 class="mb-5 text-xs font-bold uppercase tracking-[.14em] text-white">Trabalhe com a gente</h2><form class="flex border-b border-white/25 pb-2" id="footer-whatsapp-form"><label class="sr-only" for="email-footer">Seu e-mail</label><input class="w-full border-0 bg-transparent p-0 text-sm text-white placeholder:text-mist focus:ring-0" id="email-footer" name="email" placeholder="Envie um e-mail" required="" type="email"/><button aria-label="Enviar e-mail" class="text-signal transition-colors hover:text-white" type="submit"><span class="material-symbols-outlined">send</span></button></form><p class="mt-4 text-xs leading-5 text-mist">Receba novidades e oportunidades da 30 Segundos.</p></div>
+    </div>
+    <div class="flex flex-col justify-between gap-4 border-t border-white/15 pt-8 text-xs text-mist md:flex-row md:items-center"><span>© 2024 30 Segundos Produtora, todos os direitos reservados.</span><div class="flex gap-6"><a class="transition-colors hover:text-white" href="#">Termos e condições</a><a class="transition-colors hover:text-white" href="#">Política de privacidade</a></div></div>
+  </div>
+</footer>
 <a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank"><span class="material-symbols-outlined text-2xl text-white">chat</span></a>
 <script>
   const insightsWhatsappForm = document.querySelector('#insights-whatsapp-form');
+  const footerWhatsappForm = document.querySelector('#footer-whatsapp-form');
   const whatsappUrl = 'https://api.whatsapp.com/send/?phone=5543991619048&text=';
   insightsWhatsappForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!insightsWhatsappForm.reportValidity()) return;
     const email = new FormData(insightsWhatsappForm).get('email');
     window.open(whatsappUrl + encodeURIComponent(`Olá! Quero receber os conteúdos da 30 Segundos. Meu e-mail: ${email}`), '_blank', 'noopener');
+  });
+  footerWhatsappForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!footerWhatsappForm.reportValidity()) return;
+    const email = new FormData(footerWhatsappForm).get('email');
+    window.open(whatsappUrl + encodeURIComponent(`Olá! Quero falar com a 30 Segundos. Meu e-mail: ${email}`), '_blank', 'noopener');
   });
   const mobileMenuButton = document.querySelector('#mobile-menu-button');
   const mobileMenu = document.querySelector('#mobile-menu');
