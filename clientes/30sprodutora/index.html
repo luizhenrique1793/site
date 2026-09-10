@@ -123,144 +123,243 @@
 <body class="bg-pure-black text-stark-white font-body-md antialiased selection:bg-signal-red selection:text-stark-white">
 <!-- 1. TopNavBar -->
 <nav class="bg-pure-black/85 backdrop-blur-md docked full-width top-0 fixed z-50 border-b border-white/10 w-full">
-<div class="site-nav-inner flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-5 max-w-container-max mx-auto">
-<!-- Brand -->
-<a aria-label="30 Segundos - Início" class="brand-mark transition-transform duration-200 hover:scale-105" href="#">
-<img alt="30 Segundos" class="brand-logo" src="logo.png"/>
+    <div class="site-nav-inner flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-5 max-w-container-max mx-auto">
+        <!-- Brand -->
+        <a aria-label="30 Segundos - Início" class="brand-mark transition-transform duration-200 hover:scale-105" href="#">
+            <img alt="30 Segundos" class="brand-logo" src="logo.png"/>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="site-nav-links hidden md:flex items-center gap-8">
+            <li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="#trabalhos">TRABALHOS</a></li>
+            <li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="servicos.html">SERVIÇOS</a></li>
+            <li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="insights.html">INSIGHTS</a></li>
+            <li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="#sobre">SOBRE NÓS</a></li>
+        </ul>
+
+        <!-- Actions / Mobile Toggle -->
+        <div class="site-nav-actions flex items-center gap-4">
+            <a class="site-nav-cta hidden md:inline-flex items-center gap-3 bg-signal-red px-5 py-3 text-[11px] tracking-[0.12em] text-stark-white hover:bg-stark-white hover:text-pure-black transition-colors duration-300" href="#contato">
+                VAMOS CONVERSAR <span class="material-symbols-outlined text-base">arrow_outward</span>
             </a>
-<!-- Desktop Nav -->
-<ul class="site-nav-links hidden md:flex items-center gap-8">
-<li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="#trabalhos">TRABALHOS</a></li>
-<li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="servicos.html">SERVIÇOS</a></li>
-<li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="insights.html">INSIGHTS</a></li>
-<li><a class="text-[11px] tracking-[0.12em] text-stark-white hover:text-signal-red transition-colors" href="#sobre">SOBRE NÓS</a></li>
-</ul>
-<!-- Actions / Mobile Toggle -->
-<div class="site-nav-actions flex items-center gap-4">
-<a class="site-nav-cta hidden md:inline-flex items-center gap-3 bg-signal-red px-5 py-3 text-[11px] tracking-[0.12em] text-stark-white hover:bg-stark-white hover:text-pure-black transition-colors duration-300" href="#contato">
-VAMOS CONVERSAR <span class="material-symbols-outlined text-base">arrow_outward</span>
-</a>
-<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="md:hidden text-stark-white" id="mobile-menu-button">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 32px;">menu</span>
-</button>
-</div>
-</div>
-<div class="hidden border-t border-white/10 bg-pure-black px-margin-mobile py-6 md:hidden" id="mobile-menu">
-<div class="flex flex-col gap-5">
-<a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="#trabalhos">TRABALHOS</a>
-<a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="servicos.html">SERVIÇOS</a>
-<a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="insights.html">INSIGHTS</a>
-<a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="#sobre">SOBRE NÓS</a>
-<a class="inline-flex w-fit items-center gap-3 bg-signal-red px-5 py-3 font-label-caps text-label-caps text-stark-white" data-mobile-menu-link="" href="#contato">FALE CONOSCO <span class="material-symbols-outlined text-base">arrow_outward</span></a>
-</div>
-</div>
+            <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="md:hidden text-stark-white" id="mobile-menu-button">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 32px;">menu</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="hidden border-t border-white/10 bg-pure-black px-margin-mobile py-6 md:hidden" id="mobile-menu">
+        <div class="flex flex-col gap-5">
+            <a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="#trabalhos">TRABALHOS</a>
+            <a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="servicos.html">SERVIÇOS</a>
+            <a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="insights.html">INSIGHTS</a>
+            <a class="font-label-caps text-label-caps text-stark-white hover:text-signal-red" data-mobile-menu-link="" href="#sobre">SOBRE NÓS</a>
+            <a class="inline-flex w-fit items-center gap-3 bg-signal-red px-5 py-3 font-label-caps text-label-caps text-stark-white" data-mobile-menu-link="" href="#contato">FALE CONOSCO <span class="material-symbols-outlined text-base">arrow_outward</span></a>
+        </div>
+    </div>
 </nav>
+
 <!-- 2. Hero Section -->
 <header class="relative w-full min-h-screen flex items-center justify-center pt-24 overflow-hidden">
-<!-- Cinematic Background -->
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-b from-pure-black/60 via-pure-black/30 to-pure-black z-10"></div>
-<iframe allow="autoplay; encrypted-media; picture-in-picture" class="hero-video opacity-80" src="https://www.youtube-nocookie.com/embed/f7oWr5P_gn8?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=f7oWr5P_gn8&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;start=4" tabindex="-1" title="Vídeo de fundo da 30 Segundos"></iframe>
-</div>
-<div class="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center">
-<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-stark-white mb-stack-md max-w-5xl mx-auto drop-shadow-2xl">
-                Histórias que merecem ser <span class="italic font-light text-signal-red">vistas.</span>
-</h1>
-<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl mx-auto">
-                Produção audiovisual de alto padrão para marcas e narrativas corporativas. Elevamos o padrão estético com precisão cinematográfica.
-            </p>
-<a class="inline-flex items-center gap-3 border border-stark-white text-stark-white px-8 py-4 font-label-caps text-label-caps hover:bg-stark-white hover:text-pure-black transition-colors duration-300" href="#trabalhos">
-                VER TRABALHOS
-                <span class="material-symbols-outlined" style="font-size: 18px;">arrow_downward</span>
-</a>
-</div>
+    <!-- Cinematic Background -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-pure-black/60 via-pure-black/30 to-pure-black z-10"></div>
+        <iframe allow="autoplay; encrypted-media; picture-in-picture" class="hero-video opacity-80" src="https://www.youtube-nocookie.com/embed/f7oWr5P_gn8?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=f7oWr5P_gn8&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;start=4" tabindex="-1" title="Vídeo de fundo da 30 Segundos"></iframe>
+    </div>
+
+    <div class="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center">
+        <h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-stark-white mb-stack-md max-w-5xl mx-auto drop-shadow-2xl">
+            Histórias que merecem ser <span class="italic font-light text-signal-red">vistas.</span>
+        </h1>
+        <p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl mx-auto">
+            Produção audiovisual de alto padrão para marcas e narrativas corporativas. Elevamos o padrão estético com precisão cinematográfica.
+        </p>
+        <a class="inline-flex items-center gap-3 border border-stark-white text-stark-white px-8 py-4 font-label-caps text-label-caps hover:bg-stark-white hover:text-pure-black transition-colors duration-300" href="#trabalhos">
+            VER TRABALHOS
+            <span class="material-symbols-outlined" style="font-size: 18px;">arrow_downward</span>
+        </a>
+    </div>
 </header>
+
 <!-- 3. Portfolio Mosaic -->
 <section class="w-full bg-pure-black py-section-gap" id="trabalhos">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
-<div class="lg:col-span-7">
-<p class="font-label-caps text-label-caps text-signal-red mb-4">PORTFÓLIO / CAMPANHAS</p>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white leading-tight">Cases que fazem<br/>marcas acontecerem.</h2>
-</div>
-<p class="lg:col-span-4 lg:col-start-9 font-body-md text-body-md text-secondary max-w-md">Filmes publicitários concebidos para interromper a rolagem, permanecer na memória e mover pessoas.</p>
-</div>
-<div aria-label="Filtrar cases" class="flex flex-wrap gap-x-6 gap-y-3 border-y border-white/15 py-5 mb-8">
-<button aria-pressed="true" class="case-filter font-label-caps text-label-caps text-signal-red border-b border-signal-red pb-1" data-filter="todos" type="button">TODOS</button>
-<button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="campanha" type="button">CAMPANHAS</button>
-<button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="institucional" type="button">INSTITUCIONAL</button>
-<button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="social" type="button">SOCIAL CONTENT</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
-<button class="case-item group relative lg:col-span-7 aspect-[16/10] text-left overflow-hidden" data-case="Campanha de Varejo" data-category="campanha" type="button">
-<span class="case-image case-image--1 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute inset-0 border border-white/10 group-hover:border-white/40 transition-colors"></span>
-<span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">01 / CAMPANHA</span><span class="absolute right-5 top-5 w-11 h-11 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
-<span class="absolute bottom-5 left-5"><span class="block font-headline-md text-2xl md:text-4xl text-stark-white">Varejo em Movimento</span><span class="font-label-caps text-label-caps text-white/75">FILME PUBLICITÁRIO</span></span>
-</button>
-<button class="case-item group relative lg:col-span-5 aspect-[16/10] lg:aspect-auto text-left overflow-hidden" data-case="Joalheria" data-category="campanha" type="button"><span class="case-image case-image--2 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute inset-0 border border-white/10 group-hover:border-white/40 transition-colors"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">02 / CAMPANHA</span><span class="absolute right-5 top-5 w-11 h-11 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5"><span class="block font-headline-md text-2xl text-stark-white">Brilho Singular</span><span class="font-label-caps text-label-caps text-white/75">BEAUTY & LUXO</span></span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Experiência de marca" data-category="social" type="button"><span class="case-image case-image--3 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">03 / SOCIAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Experiência<br/>de Marca</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Atendimento que conecta" data-category="institucional" type="button"><span class="case-image case-image--4 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">04 / INSTITUCIONAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Perto de Você</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Sabores em cena" data-category="campanha" type="button"><span class="case-image case-image--5 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">05 / CAMPANHA</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Sabores<br/>em Cena</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Novo olhar" data-category="social" type="button"><span class="case-image case-image--6 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">06 / SOCIAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Novo Olhar</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Marca em cena" data-category="campanha" type="button"><span class="case-image case-image--7 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">07 / CAMPANHA</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Marca<br/>em Cena</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Lançamento" data-category="institucional" type="button"><span class="case-image case-image--8 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">08 / INSTITUCIONAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Lançamento</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Toda jornada" data-category="social" type="button"><span class="case-image case-image--9 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">09 / SOCIAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Toda Jornada</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Em cena" data-category="campanha" type="button"><span class="case-image case-image--10 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">10 / CAMPANHA</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Em Cena</span></button>
-<button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Momento alto" data-category="institucional" type="button"><span class="case-image case-image--11 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span><span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">11 / INSTITUCIONAL</span><span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span><span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Momento Alto</span></button>
-</div>
-</div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12">
+            <div class="lg:col-span-7">
+                <p class="font-label-caps text-label-caps text-signal-red mb-4">PORTFÓLIO / CAMPANHAS</p>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white leading-tight">Cases que fazem<br/>marcas acontecerem.</h2>
+            </div>
+            <p class="lg:col-span-4 lg:col-start-9 font-body-md text-body-md text-secondary max-w-md">Filmes publicitários concebidos para interromper a rolagem, permanecer na memória e mover pessoas.</p>
+        </div>
+
+        <div aria-label="Filtrar cases" class="flex flex-wrap gap-x-6 gap-y-3 border-y border-white/15 py-5 mb-8">
+            <button aria-pressed="true" class="case-filter font-label-caps text-label-caps text-signal-red border-b border-signal-red pb-1" data-filter="todos" type="button">TODOS</button>
+            <button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="campanha" type="button">CAMPANHAS</button>
+            <button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="institucional" type="button">INSTITUCIONAL</button>
+            <button aria-pressed="false" class="case-filter font-label-caps text-label-caps text-secondary hover:text-stark-white transition-colors" data-filter="social" type="button">SOCIAL CONTENT</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
+            <button class="case-item group relative lg:col-span-7 aspect-[16/10] text-left overflow-hidden" data-case="Campanha de Varejo" data-category="campanha" type="button">
+                <span class="case-image case-image--1 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute inset-0 border border-white/10 group-hover:border-white/40 transition-colors"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">01 / CAMPANHA</span>
+                <span class="absolute right-5 top-5 w-11 h-11 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5"><span class="block font-headline-md text-2xl md:text-4xl text-stark-white">Varejo em Movimento</span><span class="font-label-caps text-label-caps text-white/75">FILME PUBLICITÁRIO</span></span>
+            </button>
+            <button class="case-item group relative lg:col-span-5 aspect-[16/10] lg:aspect-auto text-left overflow-hidden" data-case="Joalheria" data-category="campanha" type="button">
+                <span class="case-image case-image--2 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute inset-0 border border-white/10 group-hover:border-white/40 transition-colors"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">02 / CAMPANHA</span>
+                <span class="absolute right-5 top-5 w-11 h-11 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5"><span class="block font-headline-md text-2xl text-stark-white">Brilho Singular</span><span class="font-label-caps text-label-caps text-white/75">BEAUTY & LUXO</span></span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Experiência de marca" data-category="social" type="button">
+                <span class="case-image case-image--3 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">03 / SOCIAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Experiência<br/>de Marca</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Atendimento que conecta" data-category="institucional" type="button">
+                <span class="case-image case-image--4 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">04 / INSTITUCIONAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Perto de Você</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Sabores em cena" data-category="campanha" type="button">
+                <span class="case-image case-image--5 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">05 / CAMPANHA</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Sabores<br/>em Cena</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Novo olhar" data-category="social" type="button">
+                <span class="case-image case-image--6 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">06 / SOCIAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Novo Olhar</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Marca em cena" data-category="campanha" type="button">
+                <span class="case-image case-image--7 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">07 / CAMPANHA</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Marca<br/>em Cena</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Lançamento" data-category="institucional" type="button">
+                <span class="case-image case-image--8 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">08 / INSTITUCIONAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Lançamento</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Toda jornada" data-category="social" type="button">
+                <span class="case-image case-image--9 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">09 / SOCIAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Toda Jornada</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Em cena" data-category="campanha" type="button">
+                <span class="case-image case-image--10 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">10 / CAMPANHA</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Em Cena</span>
+            </button>
+            <button class="case-item group relative lg:col-span-4 aspect-[4/3] text-left overflow-hidden" data-case="Momento alto" data-category="institucional" type="button">
+                <span class="case-image case-image--11 absolute inset-0 transition-transform duration-700 group-hover:scale-105"></span>
+                <span class="absolute top-5 left-5 font-label-caps text-label-caps text-stark-white">11 / INSTITUCIONAL</span>
+                <span class="absolute right-5 top-5 w-10 h-10 border border-white/60 flex items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">play_arrow</span></span>
+                <span class="absolute bottom-5 left-5 font-headline-md text-2xl text-stark-white">Momento Alto</span>
+            </button>
+        </div>
+    </div>
 </section>
+
 <!-- 4. Contact Form Section -->
 <section class="w-full bg-deep-charcoal py-20 md:py-24 border-y border-[#333333]" id="contato">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter lg:gap-32 items-center">
-<!-- Text -->
-<div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white mb-stack-md leading-tight">
-<span class="text-signal-red">#</span> vamos<br/>produzir seu<br/>próximo filme?
-                    </h2>
-<p class="font-body-md text-body-md text-secondary max-w-md">
-                        Nossa equipe está pronta para transformar sua visão em uma narrativa visual de alto impacto. Entre em contato para discutirmos seu projeto.
-                    </p>
-</div>
-<!-- Form -->
-<div class="bg-pure-black p-8 md:p-12 border border-[#333333]">
-<div class="flex justify-between items-center mb-8 border-b border-[#333333] pb-4">
-<span class="font-label-caps text-label-caps text-stark-white">SOLICITE UM ORÇAMENTO</span>
-<span class="material-symbols-outlined text-signal-red">horizontal_rule</span>
-</div>
-<form class="space-y-6 flex flex-col" id="contact-whatsapp-form">
-<div class="relative">
-<input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="nome" name="nome" placeholder="Nome / Empresa" required="" type="text"/>
-</div>
-<div class="relative">
-<input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="whatsapp" name="whatsapp" placeholder="WhatsApp" required="" type="tel"/>
-</div>
-<div class="relative">
-<input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="mensagem" name="mensagem" placeholder="Mensagem" required="" type="text"/>
-</div>
-<div class="pt-4 flex justify-end">
-<button class="bg-signal-red hover:bg-inverse-primary text-stark-white font-label-caps text-label-caps px-8 py-3 transition-colors duration-300" type="submit">
-                                ENVIAR
-                            </button>
-</div>
-</form>
-</div>
-</div>
-</div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter lg:gap-32 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white mb-stack-md leading-tight">
+                    <span class="text-signal-red">#</span> vamos<br/>produzir seu<br/>próximo filme?
+                </h2>
+                <p class="font-body-md text-body-md text-secondary max-w-md">
+                    Nossa equipe está pronta para transformar sua visão em uma narrativa visual de alto impacto. Entre em contato para discutirmos seu projeto.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-pure-black p-8 md:p-12 border border-[#333333]">
+                <div class="flex justify-between items-center mb-8 border-b border-[#333333] pb-4">
+                    <span class="font-label-caps text-label-caps text-stark-white">SOLICITE UM ORÇAMENTO</span>
+                    <span class="material-symbols-outlined text-signal-red">horizontal_rule</span>
+                </div>
+                <form class="space-y-6 flex flex-col" id="contact-whatsapp-form">
+                    <div class="relative">
+                        <input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="nome" name="nome" placeholder="Nome / Empresa" required="" type="text"/>
+                    </div>
+                    <div class="relative">
+                        <input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="whatsapp" name="whatsapp" placeholder="WhatsApp" required="" type="tel"/>
+                    </div>
+                    <div class="relative">
+                        <input class="form-input-minimal w-full font-body-md text-body-md placeholder:text-secondary/50" id="mensagem" name="mensagem" placeholder="Mensagem" required="" type="text"/>
+                    </div>
+                    <div class="pt-4 flex justify-end">
+                        <button class="bg-signal-red hover:bg-inverse-primary text-stark-white font-label-caps text-label-caps px-8 py-3 transition-colors duration-300" type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- 5. Services Section -->
 <section class="w-full bg-pure-black py-20 md:py-24" id="servicos">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14"><div class="lg:col-span-7"><p class="font-label-caps text-label-caps text-signal-red mb-4">O QUE FAZEMOS</p><h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white leading-tight">Qualidade que<br/>se vê em cena.</h2><a class="inline-flex items-center gap-3 mt-7 font-label-caps text-label-caps text-stark-white hover:text-signal-red transition-colors" href="servicos.html">VER DETALHES DOS SERVIÇOS <span class="material-symbols-outlined text-base">arrow_outward</span></a></div><p class="lg:col-span-4 lg:col-start-9 font-body-md text-body-md text-secondary max-w-md">Da ideia à finalização, reunimos estratégia, direção e execução para produzir filmes que sustentam o valor de cada marca.</p></div>
-<div class="border-y border-white/15">
-<article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all"><span class="font-label-caps text-label-caps text-signal-red">01</span><span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">movie</span></span><h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Vídeos Publicitários</h3><p class="hidden md:block font-body-md text-sm text-secondary">Campanhas desenhadas para ganhar atenção, despertar desejo e mover marcas.</p><span class="material-symbols-outlined text-signal-red">arrow_outward</span></article>
-<article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all"><span class="font-label-caps text-label-caps text-signal-red">02</span><span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">corporate_fare</span></span><h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Filmes Institucionais</h3><p class="hidden md:block font-body-md text-sm text-secondary">Narrativas que tornam cultura, visão e impacto humano memoráveis.</p><span class="material-symbols-outlined text-signal-red">arrow_outward</span></article>
-<article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all"><span class="font-label-caps text-label-caps text-signal-red">03</span><span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">business_center</span></span><h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Vídeos Corporativos</h3><p class="hidden md:block font-body-md text-sm text-secondary">Comunicação audiovisual clara para construir confiança e posicionamento.</p><span class="material-symbols-outlined text-signal-red">arrow_outward</span></article>
-<article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all"><span class="font-label-caps text-label-caps text-signal-red">04</span><span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">smartphone</span></span><h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Social Content</h3><p class="hidden md:block font-body-md text-sm text-secondary">Formatos ágeis que preservam direção, linguagem e qualidade cinematográfica.</p><span class="material-symbols-outlined text-signal-red">arrow_outward</span></article>
-<article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 hover:px-4 hover:bg-deep-charcoal transition-all"><span class="font-label-caps text-label-caps text-signal-red">05</span><span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">timelapse</span></span><h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Timelapse de Obras</h3><p class="hidden md:block font-body-md text-sm text-secondary">Acompanhamento que transforma tempo, escala e evolução em uma narrativa de valor.</p><span class="material-symbols-outlined text-signal-red">arrow_outward</span></article>
-</div>
-</div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14">
+            <div class="lg:col-span-7">
+                <p class="font-label-caps text-label-caps text-signal-red mb-4">O QUE FAZEMOS</p>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-stark-white leading-tight">Qualidade que<br/>se vê em cena.</h2>
+                <a class="inline-flex items-center gap-3 mt-7 font-label-caps text-label-caps text-stark-white hover:text-signal-red transition-colors" href="servicos.html">VER DETALHES DOS SERVIÇOS <span class="material-symbols-outlined text-base">arrow_outward</span></a>
+            </div>
+            <p class="lg:col-span-4 lg:col-start-9 font-body-md text-body-md text-secondary max-w-md">Da ideia à finalização, reunimos estratégia, direção e execução para produzir filmes que sustentam o valor de cada marca.</p>
+        </div>
+
+        <div class="border-y border-white/15">
+            <article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all">
+                <span class="font-label-caps text-label-caps text-signal-red">01</span>
+                <span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">movie</span></span>
+                <h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Vídeos Publicitários</h3>
+                <p class="hidden md:block font-body-md text-sm text-secondary">Campanhas desenhadas para ganhar atenção, despertar desejo e mover marcas.</p>
+                <span class="material-symbols-outlined text-signal-red">arrow_outward</span>
+            </article>
+            <article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all">
+                <span class="font-label-caps text-label-caps text-signal-red">02</span>
+                <span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">corporate_fare</span></span>
+                <h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Filmes Institucionais</h3>
+                <p class="hidden md:block font-body-md text-sm text-secondary">Narrativas que tornam cultura, visão e impacto humano memoráveis.</p>
+                <span class="material-symbols-outlined text-signal-red">arrow_outward</span>
+            </article>
+            <article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all">
+                <span class="font-label-caps text-label-caps text-signal-red">03</span>
+                <span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">business_center</span></span>
+                <h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Vídeos Corporativos</h3>
+                <p class="hidden md:block font-body-md text-sm text-secondary">Comunicação audiovisual clara para construir confiança e posicionamento.</p>
+                <span class="material-symbols-outlined text-signal-red">arrow_outward</span>
+            </article>
+            <article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 border-b border-white/15 hover:px-4 hover:bg-deep-charcoal transition-all">
+                <span class="font-label-caps text-label-caps text-signal-red">04</span>
+                <span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">smartphone</span></span>
+                <h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Social Content</h3>
+                <p class="hidden md:block font-body-md text-sm text-secondary">Formatos ágeis que preservam direção, linguagem e qualidade cinematográfica.</p>
+                <span class="material-symbols-outlined text-signal-red">arrow_outward</span>
+            </article>
+            <article class="group grid grid-cols-[40px_1fr_40px] md:grid-cols-[72px_72px_minmax(190px,1fr)_minmax(260px,1.2fr)_40px] gap-4 items-center py-6 hover:px-4 hover:bg-deep-charcoal transition-all">
+                <span class="font-label-caps text-label-caps text-signal-red">05</span>
+                <span class="hidden md:flex w-12 h-12 border border-white/20 items-center justify-center group-hover:bg-signal-red group-hover:border-signal-red transition-colors"><span class="material-symbols-outlined">timelapse</span></span>
+                <h3 class="font-headline-md text-xl md:text-2xl text-stark-white">Timelapse de Obras</h3>
+                <p class="hidden md:block font-body-md text-sm text-secondary">Acompanhamento que transforma tempo, escala e evolução em uma narrativa de valor.</p>
+                <span class="material-symbols-outlined text-signal-red">arrow_outward</span>
+            </article>
+        </div>
+    </div>
 </section>
 <!-- 6. Client Logos -->
 <section class="w-full bg-stark-white py-12">
@@ -325,69 +424,67 @@ VAMOS CONVERSAR <span class="material-symbols-outlined text-base">arrow_outward<
 </section>
 <!-- 9. Footer -->
 <footer class="w-full bg-deep-charcoal border-t border-[#333333] pt-section-gap pb-8">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-section-gap">
-<!-- Brand & Desc -->
-<div class="col-span-1">
-<a aria-label="30 Segundos - Início" class="brand-mark mb-6" href="#">
-<img alt="30 Segundos" class="brand-logo" src="logo.png"/>
-                    </a>
-<p class="font-body-md text-body-md text-secondary text-sm max-w-xs">
-                        Produtora de vídeo especializada em projetar autoridade e fortalecer marcas.
-                    </p>
-<div class="flex gap-4 mt-8">
-<a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">link</span></a>
-<a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
-<a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">play_arrow</span></a>
-</div>
-</div>
-<!-- Services Links -->
-<div class="col-span-1">
-<h4 class="font-label-caps text-label-caps text-stark-white mb-6">SERVIÇOS</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Vídeos Publicitários</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Filmes Institucionais</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Vídeos Corporativos</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Social Content</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Time Lapse de Obras</a></li>
-</ul>
-</div>
-<!-- Resources Links -->
-<div class="col-span-1">
-<h4 class="font-label-caps text-label-caps text-stark-white mb-6">NAVEGAÇÃO</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Sobre</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Trabalhos</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="insights.html">Insights</a></li>
-<li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Contato</a></li>
-</ul>
-</div>
-<!-- Newsletter / Join -->
-<div class="col-span-1">
-<h4 class="font-label-caps text-label-caps text-stark-white mb-6">TRABALHE COM A GENTE</h4>
-<form class="flex border-b border-[#333333] pb-2 mb-4" id="footer-whatsapp-form">
-<input class="bg-transparent border-none w-full text-stark-white placeholder:text-secondary focus:outline-none font-body-md text-sm p-0" name="email" placeholder="Envie um e-mail" required="" type="email"/>
-<button class="text-signal-red hover:text-stark-white transition-colors" type="submit">
-<span class="material-symbols-outlined">send</span>
-</button>
-</form>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="form-checkbox bg-transparent border-[#333333] text-signal-red rounded-sm focus:ring-signal-red" type="checkbox"/>
-<span class="font-body-md text-xs text-secondary">Concordo com os termos e condições</span>
-</label>
-</div>
-</div>
-<!-- Copyright -->
-<div class="flex flex-col md:flex-row justify-between items-center border-t border-[#333333] pt-8">
-<p class="font-body-md text-xs text-secondary">
-                    © 2024 30 Segundos Produtora - Todos os direitos reservados.
-                </p>
-<div class="flex gap-6 mt-4 md:mt-0">
-<a class="font-body-md text-xs text-secondary hover:text-stark-white transition-colors" href="#">Termos e condições</a>
-<a class="font-body-md text-xs text-secondary hover:text-stark-white transition-colors" href="#">Política de privacidade</a>
-</div>
-</div>
-</div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-section-gap">
+            <!-- Brand & Desc -->
+            <div class="col-span-1">
+                <a aria-label="30 Segundos - Início" class="brand-mark mb-6" href="#">
+                    <img alt="30 Segundos" class="brand-logo" src="logo.png"/>
+                </a>
+                <p class="font-body-md text-body-md text-secondary text-sm max-w-xs">Produtora de vídeo especializada em projetar autoridade e fortalecer marcas.</p>
+                <div class="flex gap-4 mt-8">
+                    <a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">link</span></a>
+                    <a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+                    <a class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-stark-white hover:bg-signal-red transition-colors" href="#"><span class="material-symbols-outlined text-sm">play_arrow</span></a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-stark-white mb-6">SERVIÇOS</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Vídeos Publicitários</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Filmes Institucionais</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Vídeos Corporativos</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Social Content</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="servicos.html">Time Lapse de Obras</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Links -->
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-stark-white mb-6">NAVEGAÇÃO</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Sobre</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Trabalhos</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="insights.html">Insights</a></li>
+                    <li><a class="font-body-md text-body-md text-secondary hover:text-signal-red transition-colors text-sm" href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter / Join -->
+            <div class="col-span-1">
+                <h4 class="font-label-caps text-label-caps text-stark-white mb-6">TRABALHE COM A GENTE</h4>
+                <form class="flex border-b border-[#333333] pb-2 mb-4" id="footer-whatsapp-form">
+                    <input class="bg-transparent border-none w-full text-stark-white placeholder:text-secondary focus:outline-none font-body-md text-sm p-0" name="email" placeholder="Envie um e-mail" required="" type="email"/>
+                    <button class="text-signal-red hover:text-stark-white transition-colors" type="submit"><span class="material-symbols-outlined">send</span></button>
+                </form>
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input class="form-checkbox bg-transparent border-[#333333] text-signal-red rounded-sm focus:ring-signal-red" type="checkbox"/>
+                    <span class="font-body-md text-xs text-secondary">Concordo com os termos e condições</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center border-t border-[#333333] pt-8">
+            <p class="font-body-md text-xs text-secondary">© 2024 30 Segundos Produtora - Todos os direitos reservados.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a class="font-body-md text-xs text-secondary hover:text-stark-white transition-colors" href="#">Termos e condições</a>
+                <a class="font-body-md text-xs text-secondary hover:text-stark-white transition-colors" href="#">Política de privacidade</a>
+            </div>
+        </div>
+    </div>
 </footer>
 <a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank"><span class="material-symbols-outlined text-2xl text-stark-white">chat</span></a>
 <dialog aria-labelledby="case-dialog-title" class="m-auto w-[min(1040px,calc(100%-32px))] bg-deep-charcoal text-stark-white border border-white/20 p-0" id="case-dialog">
