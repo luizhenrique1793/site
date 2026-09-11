@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Time Lapse de Obras | 30 Segundos</title>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { signal: '#e30613', charcoal: '#121212', mist: '#c6c6c7' },
+                    fontFamily: { display: ['Montserrat'], body: ['Hanken Grotesk'] }
+                }
+            }
+        };
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background: #000; color: #fff; }
+        .brand-mark { display: block; flex: 0 0 128px; height: 91px; width: 128px; }
+        .brand-logo { display: block; height: 100%; object-fit: contain; width: 100%; }
+        .article-cover { background: linear-gradient(0deg, rgba(0, 0, 0, .72), rgba(0, 0, 0, .08)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=85') center / cover; }
+        .whatsapp-float { align-items: center; background: #25d366; border: 1px solid rgba(255, 255, 255, .35); bottom: 24px; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); display: flex; height: 56px; justify-content: center; position: fixed; right: 24px; transition: transform .2s ease, background .2s ease; width: 56px; z-index: 60; }
+        .whatsapp-float:hover { background: #1fb85a; transform: translateY(-3px); }
+    </style>
+</head>
+<body class="font-body antialiased">
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-md">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 md:px-20">
+            <a aria-label="30 Segundos - Início" class="brand-mark" href="index.html"><img alt="30 Segundos" class="brand-logo" src="logo.png"/></a>
+            <a class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[.14em] text-white transition-colors hover:text-signal" href="insights.html">Voltar aos insights <span class="material-symbols-outlined text-base">arrow_back</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="article-cover flex min-h-[620px] items-end px-6 pb-14 pt-40 md:px-16 md:pb-20">
+            <div class="mx-auto w-full max-w-[1440px]">
+                <p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-signal">PRODUÇÃO / 5 MIN</p>
+                <h1 class="max-w-5xl font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">Time lapse de obras,<br/>uma história construída no tempo.</h1>
+            </div>
+        </header>
+
+        <article class="mx-auto max-w-[820px] px-6 py-20 md:py-28">
+            <p class="mb-12 text-xl leading-9 text-mist md:text-2xl">Uma obra muda todos os dias. O time lapse transforma meses de evolução em uma narrativa clara para clientes, investidores e equipes.</p>
+            <div class="space-y-10 text-lg leading-8 text-mist">
+                <section>
+                    <h2 class="mb-4 font-display text-3xl font-bold text-white">O plano começa antes da primeira imagem.</h2>
+                    <p>Definir os pontos de câmera, a frequência de captação e a leitura que o filme precisa ter evita lacunas na história. O registro precisa acompanhar a obra sem interromper o ritmo do canteiro.</p>
+                </section>
+                <section>
+                    <h2 class="mb-4 font-display text-3xl font-bold text-white">Escala é parte da mensagem.</h2>
+                    <p>O recurso não mostra apenas o antes e depois. Ele evidencia complexidade, coordenação e a transformação de um projeto em algo concreto.</p>
+                </section>
+                <section>
+                    <h2 class="mb-4 font-display text-3xl font-bold text-white">O filme final organiza a evolução.</h2>
+                    <p>Na edição, cada etapa ganha ritmo, contexto e direção. O resultado pode servir à apresentação comercial, à comunicação com investidores e à memória do projeto.</p>
+                </section>
+            </div>
+        </article>
+
+        <section class="border-y border-white/15 bg-charcoal px-6 py-16 md:px-16 md:py-20">
+            <div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-8 md:flex-row md:items-end">
+                <div><p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">PRÓXIMO PROJETO</p><h2 class="font-display text-4xl font-bold leading-tight md:text-5xl">Vamos registrar a evolução<br/>da sua obra.</h2></div>
+                <a class="inline-flex items-center gap-3 bg-signal px-7 py-5 text-xs font-bold uppercase tracking-[.14em] transition-colors hover:bg-white hover:text-black" href="index.html#contato">Fale conosco <span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/15 bg-charcoal px-6 py-8 md:px-20"><div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-xs text-mist md:flex-row"><span>© 2024 30 Segundos Produtora, todos os direitos reservados.</span><a class="transition-colors hover:text-white" href="insights.html">Ver todos os insights</a></div></footer>
+    <a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank"><span class="material-symbols-outlined text-2xl text-white">chat</span></a>
+</body>
+</html>

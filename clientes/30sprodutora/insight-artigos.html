@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Insight | 30 Segundos</title>
+        <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+        <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: { signal: '#e30613', charcoal: '#121212', mist: '#c6c6c7' },
+                        fontFamily: { display: ['Montserrat'], body: ['Hanken Grotesk'] }
+                    }
+                }
+            };
+        </script>
+        <style>
+            html { scroll-behavior: smooth; }
+            body { background: #000; color: #fff; }
+            .brand-mark { display: block; flex: 0 0 128px; height: 91px; width: 128px; }
+            .brand-logo { display: block; height: 100%; object-fit: contain; width: 100%; }
+            .article-cover { background: linear-gradient(0deg, rgba(0, 0, 0, .78), rgba(0, 0, 0, .18)), var(--article-image) center / cover; }
+            .whatsapp-float { align-items: center; background: #25d366; border: 1px solid rgba(255, 255, 255, .35); bottom: 24px; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); display: flex; height: 56px; justify-content: center; position: fixed; right: 24px; transition: transform .2s ease, background .2s ease; width: 56px; z-index: 60; }
+            .whatsapp-float:hover { background: #1fb85a; transform: translateY(-3px); }
+        </style>
+    </head>
+    <body class="font-body antialiased">
+        <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-md">
+            <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 md:px-20">
+                <a aria-label="30 Segundos - Início" class="brand-mark" href="index.html">
+                    <img alt="30 Segundos" class="brand-logo" src="logo.png"/>
+                </a>
+                <a class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[.14em] text-white transition-colors hover:text-signal" href="insights.html">
+                    Voltar aos insights
+                    <span class="material-symbols-outlined text-base">arrow_back</span>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <header class="article-cover flex min-h-[620px] items-end px-6 pb-14 pt-40 md:px-16 md:pb-20" id="article-cover">
+                <div class="mx-auto w-full max-w-[1440px]">
+                    <p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-signal" id="article-meta"></p>
+                    <h1 class="max-w-5xl font-display text-5xl font-extrabold leading-[1.05] md:text-7xl" id="article-title"></h1>
+                </div>
+            </header>
+
+            <article class="mx-auto max-w-[820px] px-6 py-20 md:py-28">
+                <p class="mb-12 text-xl leading-9 text-mist md:text-2xl" id="article-intro"></p>
+                <div class="space-y-10 text-lg leading-8 text-mist" id="article-content"></div>
+            </article>
+
+            <section class="border-y border-white/15 bg-charcoal px-6 py-16 md:px-16 md:py-20">
+                <div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-8 md:flex-row md:items-end">
+                    <div>
+                        <p class="mb-4 text-xs font-bold uppercase tracking-[.16em] text-signal">PRÓXIMO PROJETO</p>
+                        <h2 class="font-display text-4xl font-bold leading-tight md:text-5xl">Vamos transformar uma boa ideia<br/>em um filme que faz sentido.</h2>
+                    </div>
+                    <a class="inline-flex items-center gap-3 bg-signal px-7 py-5 text-xs font-bold uppercase tracking-[.14em] transition-colors hover:bg-white hover:text-black" href="index.html#contato">
+                        Fale conosco
+                        <span class="material-symbols-outlined">arrow_outward</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-white/15 bg-charcoal px-6 py-8 md:px-20">
+            <div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-xs text-mist md:flex-row">
+                <span>© 2024 30 Segundos Produtora, todos os direitos reservados.</span>
+                <a class="transition-colors hover:text-white" href="insights.html">Ver todos os insights</a>
+            </div>
+        </footer>
+
+        <a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank">
+            <span class="material-symbols-outlined text-2xl text-white">chat</span>
+        </a>
+
+        <script>
+            const articles = {
+                'campanha-memoravel': {
+                    meta: 'ESTRATÉGIA / 6 MIN',
+                    title: 'O que faz uma campanha de vídeo permanecer na memória?',
+                    intro: 'Uma boa produção não começa na câmera. Ela nasce de uma ideia clara, ganha ritmo com escolhas bem feitas e encontra sua força na forma como chega às pessoas.',
+                    image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['A mensagem precisa caber em uma frase.', 'Antes de pensar em cenas, vale definir o que a campanha precisa fazer alguém sentir, entender ou lembrar. Essa decisão orienta roteiro, direção e edição sem deixar a comunicação se perder em excesso de informação.'],
+                        ['A forma reforça a ideia.', 'Imagem, música, elenco, locação e ritmo não são escolhas separadas. Quando todos apontam para a mesma mensagem, a campanha fica mais fácil de reconhecer e mais difícil de esquecer.'],
+                        ['Memória também depende de repetição.', 'Uma campanha continua viva quando foi pensada para os diferentes lugares em que a marca aparece. O filme principal abre a conversa e os recortes ajudam a manter a ideia em circulação.']
+                    ]
+                },
+                'planejar-diaria': {
+                    meta: 'PRODUÇÃO / 5 MIN',
+                    title: 'Como planejar uma diária de gravação sem perder a espontaneidade',
+                    intro: 'Planejar bem não deixa um filme mecânico. Pelo contrário, cria o espaço necessário para que as cenas importantes aconteçam com atenção e tranquilidade.',
+                    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['O roteiro organiza o essencial.', 'O plano de gravação começa separando o que é indispensável do que pode acontecer no caminho. Assim a equipe sabe quais cenas sustentam a história e onde existe margem para observar novos momentos.'],
+                        ['Tempo de set é uma escolha de qualidade.', 'Deslocamento, preparação de luz, ajustes de som e troca de cenário precisam estar previstos. Uma agenda realista evita que a pressa afete a conversa com quem está em frente à câmera.'],
+                        ['O melhor imprevisto ainda precisa caber no plano.', 'Quando a estrutura está clara, a direção consegue aproveitar uma resposta verdadeira, uma luz inesperada ou uma ação que não estava no roteiro, sem comprometer o restante do dia.']
+                    ]
+                },
+                'video-institucional': {
+                    meta: 'ESTRATÉGIA / 4 MIN',
+                    title: 'O vídeo institucional ainda precisa parecer institucional?',
+                    intro: 'Um filme sobre uma empresa não precisa ser uma apresentação formal. Ele pode mostrar pessoas, escolhas e situações que ajudam o público a entender a marca de verdade.',
+                    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['Comece pelo que a marca quer deixar claro.', 'Uma lista de serviços raramente cria conexão. É mais útil descobrir qual percepção o filme precisa construir, seja confiança, proximidade, clareza ou reconhecimento.'],
+                        ['Pessoas tornam a mensagem concreta.', 'Quem trabalha na empresa, quem usa o produto e quem lidera uma decisão ajudam a dar forma a valores que, no papel, poderiam soar abstratos.'],
+                        ['A linguagem acompanha o contexto.', 'O mesmo conteúdo pode precisar de ritmos e formatos diferentes para uma reunião comercial, uma página institucional ou as redes sociais. A ideia central continua, mas a entrega se adapta.']
+                    ]
+                },
+                'direcao-de-arte': {
+                    meta: 'MARCA / 6 MIN',
+                    title: 'Por que direção de arte é estratégia de percepção',
+                    intro: 'Antes de alguém ouvir uma palavra, já percebe luz, cor, textura, cenário e ritmo. A direção de arte dá coerência a esses sinais e ajuda a marca a ser reconhecida.',
+                    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['O visual já está dizendo alguma coisa.', 'Uma escolha de locação ou figurino muda a leitura de uma cena. Por isso a direção de arte não entra apenas para deixar o resultado bonito, ela define a atmosfera que sustenta a mensagem.'],
+                        ['Consistência cria reconhecimento.', 'Quando os elementos visuais seguem uma mesma intenção, a campanha ganha unidade. A pessoa não precisa ver o logo o tempo inteiro para perceber de onde aquele filme vem.'],
+                        ['Detalhes bem escolhidos fazem diferença.', 'Cores, materiais, objetos e enquadramentos precisam ter função. Cada decisão pode reforçar a personalidade da marca sem disputar atenção com a história.']
+                    ]
+                },
+                'filmes-com-pessoas': {
+                    meta: 'MARCA / 3 MIN',
+                    title: 'Filmes com pessoas: como encontrar a voz certa',
+                    intro: 'Uma fala só convence quando parece pertencer a quem está em cena. Encontrar essa voz envolve casting, escuta e direção antes de começar a gravar.',
+                    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['A pessoa certa não é apenas um perfil.', 'Mais do que preencher um briefing visual, o elenco precisa carregar a energia da campanha. A presença, o jeito de falar e a relação com a situação importam tanto quanto a aparência.'],
+                        ['Escutar vem antes de dirigir.', 'Uma boa entrevista ou conversa de preparação revela formas de falar que não aparecem no texto inicial. É daí que surgem falas mais naturais e cenas mais próximas da realidade.'],
+                        ['Direção cria segurança para a cena acontecer.', 'Orientações claras e um ambiente tranquilo ajudam a pessoa a esquecer a câmera. O resultado mantém intenção, sem perder a espontaneidade que dá credibilidade ao filme.']
+                    ]
+                },
+                'multiplas-telas': {
+                    meta: 'PRODUÇÃO / 7 MIN',
+                    title: 'O que muda quando uma campanha nasce para múltiplas telas',
+                    intro: 'Uma ideia pode viver em formatos diferentes sem virar uma sequência de adaptações apressadas. O caminho é pensar no conceito e nos desdobramentos desde o início.',
+                    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['O filme principal não precisa carregar tudo sozinho.', 'A campanha pode ter uma peça central e outros conteúdos com funções específicas. Um corte curto chama atenção, um bastidor aproxima e uma versão vertical encontra quem está no celular.'],
+                        ['Cada tela tem seu próprio ritmo.', 'Tempo de atenção, proporção e contexto de consumo mudam de uma plataforma para outra. A edição precisa respeitar essa diferença sem abandonar a linguagem da campanha.'],
+                        ['Planejar os recortes evita perdas depois.', 'Quando os formatos estão previstos no roteiro e na decupagem, a equipe registra o que cada entrega precisa. Isso preserva qualidade e dá mais liberdade para a pós-produção.']
+                    ]
+                },
+                'referencia-ao-set': {
+                    meta: 'BASTIDORES / 4 MIN',
+                    title: 'Da referência ao set: onde uma campanha ganha sua forma',
+                    intro: 'Referências não existem para serem copiadas. Elas ajudam a equipe a alinhar linguagem, ritmo e atmosfera antes de transformar uma intenção em imagens próprias.',
+                    image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=2000&q=85',
+                    sections: [
+                        ['Referência é ponto de partida.', 'Uma imagem, um filme ou uma fotografia pode abrir uma conversa sobre luz, enquadramento ou sensação. O trabalho é entender o que torna aquela referência relevante para a ideia da campanha.'],
+                        ['A pré-produção traduz intenção em escolhas.', 'Roteiro, locação, objetos, figurino e equipe se encontram antes do set. É nesse momento que uma direção abstrata começa a se tornar viável para a gravação.'],
+                        ['No set, o plano encontra a realidade.', 'A cena ganha forma nas decisões de cada pessoa envolvida. Ajustes de luz, performance e câmera mantêm a produção fiel à intenção, mesmo quando a solução precisa mudar.']
+                    ]
+                }
+            };
+
+            const articleKey = new URLSearchParams(window.location.search).get('artigo');
+            const article = articles[articleKey] || articles['campanha-memoravel'];
+            const content = document.querySelector('#article-content');
+
+            document.title = `${article.title} | 30 Segundos`;
+            document.querySelector('#article-meta').textContent = article.meta;
+            document.querySelector('#article-title').textContent = article.title;
+            document.querySelector('#article-intro').textContent = article.intro;
+            document.querySelector('#article-cover').style.setProperty('--article-image', `url('${article.image}')`);
+
+            article.sections.forEach(([heading, paragraph]) => {
+                const section = document.createElement('section');
+                const title = document.createElement('h2');
+                const text = document.createElement('p');
+
+                title.className = 'mb-4 font-display text-3xl font-bold text-white';
+                title.textContent = heading;
+                text.textContent = paragraph;
+                section.append(title, text);
+                content.append(section);
+            });
+        </script>
+    </body>
+</html>

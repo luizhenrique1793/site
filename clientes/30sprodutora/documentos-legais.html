@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Documentos legais | 30 Segundos</title>
+        <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+        <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: { signal: '#e30613', charcoal: '#121212', mist: '#c6c6c7' },
+                        fontFamily: { display: ['Montserrat'], body: ['Hanken Grotesk'] }
+                    }
+                }
+            };
+        </script>
+        <style>
+            html { scroll-behavior: smooth; }
+            body { background: #000; color: #fff; }
+            .brand-mark { display: block; flex: 0 0 128px; height: 91px; width: 128px; }
+            .brand-logo { display: block; height: 100%; object-fit: contain; width: 100%; }
+            .whatsapp-float { align-items: center; background: #25d366; border: 1px solid rgba(255, 255, 255, .35); bottom: 24px; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); display: flex; height: 56px; justify-content: center; position: fixed; right: 24px; transition: transform .2s ease, background .2s ease; width: 56px; z-index: 60; }
+            .whatsapp-float:hover { background: #1fb85a; transform: translateY(-3px); }
+        </style>
+    </head>
+    <body class="font-body antialiased">
+        <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/85 backdrop-blur-md">
+            <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 md:px-20">
+                <a aria-label="30 Segundos - Início" class="brand-mark" href="index.html">
+                    <img alt="30 Segundos" class="brand-logo" src="logo.png"/>
+                </a>
+                <a class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[.14em] text-white transition-colors hover:text-signal" href="index.html">
+                    Voltar ao início
+                    <span class="material-symbols-outlined text-base">arrow_back</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="mx-auto max-w-[920px] px-6 pb-24 pt-44 md:px-16 md:pb-32">
+            <p class="mb-5 text-xs font-bold uppercase tracking-[.16em] text-signal">30 SEGUNDOS PRODUTORA</p>
+            <h1 class="font-display text-5xl font-extrabold leading-[1.05] md:text-7xl" id="document-title"></h1>
+            <p class="mt-6 text-sm text-mist" id="document-updated"></p>
+            <div class="mt-16 space-y-10 text-lg leading-8 text-mist" id="document-content"></div>
+        </main>
+
+        <footer class="border-t border-white/15 bg-charcoal px-6 py-8 md:px-20">
+            <div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-4 text-xs text-mist md:flex-row">
+                <span>© 2024 30 Segundos Produtora, todos os direitos reservados.</span>
+                <div class="flex gap-6">
+                    <a class="transition-colors hover:text-white" href="documentos-legais.html?documento=termos">Termos e condições</a>
+                    <a class="transition-colors hover:text-white" href="documentos-legais.html?documento=privacidade">Política de privacidade</a>
+                </div>
+            </div>
+        </footer>
+
+        <a aria-label="Falar no WhatsApp" class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=5543991619048&amp;text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." rel="noopener" target="_blank">
+            <span class="material-symbols-outlined text-2xl text-white">chat</span>
+        </a>
+
+        <script>
+            const documents = {
+                termos: {
+                    title: 'Termos e condições',
+                    sections: [
+                        ['1. Aceitação', 'Ao navegar neste site, você concorda com estes Termos e condições. Caso não concorde com algum ponto, interrompa a navegação e entre em contato conosco antes de utilizar os conteúdos ou canais disponibilizados aqui.'],
+                        ['2. Finalidade do site', 'Este site apresenta a 30 Segundos Produtora, seus serviços, trabalhos e conteúdos editoriais. As informações são disponibilizadas para fins institucionais e comerciais e podem ser atualizadas a qualquer momento.'],
+                        ['3. Conteúdo e propriedade intelectual', 'Textos, imagens, vídeos, marcas, logotipos e demais materiais exibidos neste site pertencem à 30 Segundos Produtora ou são utilizados com a devida autorização. A reprodução, distribuição ou uso fora das hipóteses permitidas por lei depende de autorização prévia.'],
+                        ['4. Contato por WhatsApp', 'Os botões de contato direcionam você ao WhatsApp. Ao iniciar uma conversa, o tratamento das informações também estará sujeito às regras da plataforma. Envie apenas os dados necessários para que possamos responder à sua solicitação.'],
+                        ['5. Links externos', 'Este site pode conter links para páginas de terceiros, como redes sociais. A 30 Segundos Produtora não controla o conteúdo, a disponibilidade ou as políticas dessas páginas.'],
+                        ['6. Alterações', 'Estes termos podem ser modificados para refletir mudanças no site, nos serviços ou na legislação aplicável. A versão publicada nesta página é a que vale no momento da sua consulta.'],
+                        ['7. Contato', 'Para dúvidas sobre estes termos, fale com a 30 Segundos Produtora pelo WhatsApp disponível no site.']
+                    ]
+                },
+                privacidade: {
+                    title: 'Política de privacidade',
+                    sections: [
+                        ['1. Compromisso com a privacidade', 'A 30 Segundos Produtora respeita a privacidade de quem visita este site. Esta política explica, de forma direta, como as informações podem ser tratadas quando você navega ou escolhe entrar em contato conosco.'],
+                        ['2. Dados informados no contato', 'O site não possui formulário próprio de cadastro. Quando você decide falar conosco pelo WhatsApp, pode fornecer dados como nome, telefone e conteúdo da mensagem. Essas informações são usadas para responder ao contato e conduzir a conversa sobre o projeto solicitado.'],
+                        ['3. Dados de navegação e serviços de terceiros', 'Como ocorre na maior parte dos sites, o acesso pode envolver dados técnicos necessários à conexão, como endereço IP, tipo de navegador e registros de acesso mantidos pela infraestrutura de hospedagem. O site também utiliza recursos de terceiros para fontes e carregamento visual. Esses fornecedores podem processar dados técnicos conforme suas próprias políticas.'],
+                        ['4. Compartilhamento', 'Não comercializamos dados pessoais. Informações podem ser compartilhadas apenas quando necessárias para operar os recursos usados no site, atender ao contato solicitado por você, cumprir obrigação legal ou proteger direitos da 30 Segundos Produtora.'],
+                        ['5. Armazenamento e segurança', 'Os dados são mantidos pelo tempo necessário para atender à finalidade do contato, cumprir obrigações legais ou resguardar direitos. Adotamos medidas razoáveis para reduzir acessos não autorizados, observados os limites técnicos de qualquer ambiente digital.'],
+                        ['6. Seus direitos', 'Nos termos da legislação aplicável, você pode solicitar confirmação de tratamento, acesso, correção, informação sobre compartilhamento e outras providências cabíveis sobre seus dados pessoais. Para isso, use o canal de WhatsApp informado no site.'],
+                        ['7. Atualizações desta política', 'Esta política pode ser revisada sempre que o funcionamento do site ou a legislação exigir. Recomendamos consultar esta página periodicamente.']
+                    ]
+                }
+            };
+
+            const documentKey = new URLSearchParams(window.location.search).get('documento');
+            const currentDocument = documents[documentKey] || documents.termos;
+            const content = document.querySelector('#document-content');
+
+            document.title = `${currentDocument.title} | 30 Segundos`;
+            document.querySelector('#document-title').textContent = currentDocument.title;
+            document.querySelector('#document-updated').textContent = 'Última atualização: 10 de setembro de 2026.';
+
+            currentDocument.sections.forEach(([heading, paragraph]) => {
+                const section = document.createElement('section');
+                const title = document.createElement('h2');
+                const text = document.createElement('p');
+
+                title.className = 'mb-4 font-display text-2xl font-bold text-white md:text-3xl';
+                title.textContent = heading;
+                text.textContent = paragraph;
+                section.append(title, text);
+                content.append(section);
+            });
+        </script>
+    </body>
+</html>
