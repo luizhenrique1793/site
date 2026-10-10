@@ -1,0 +1,14 @@
+/* Conteúdo e navegação disponíveis sem JavaScript. */
+.reveal{opacity:1!important;transform:none!important}
+.cinematic-hero{height:auto!important}
+.cinematic-stage{position:relative;min-height:100svh;height:auto;padding:128px 0 64px;display:flex;align-items:end}
+.cinematic-stage video,.cinematic-stage .cinematic-band:not(.hero-primary),.cinematic-progress{display:none!important}
+.cinematic-stage .hero-primary{display:block;position:relative;left:auto;top:auto;padding:0;width:min(calc(100% - 40px),1160px);margin:auto;opacity:1;transform:none;pointer-events:auto}
+.hero-primary .hero-actions{display:flex}
+.hero-primary:before{display:none}
+.faq-answer{grid-template-rows:1fr!important}
+.faq-answer>div{overflow:visible!important}
+.site-header{position:relative!important}
+.mobile-menu{position:static;inset:auto;margin:0 16px 16px;display:grid!important}
+@media(min-width:821px){.mobile-menu{display:none!important}}
+@media(max-width:560px){.hero-primary .hero-actions{display:grid}}

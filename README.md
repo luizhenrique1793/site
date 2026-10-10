@@ -6,6 +6,8 @@ Site estático da AutomaLeads, suas páginas de serviços e a landing page Atend
 
 ```text
 index.html                       Home principal
+agentes-ia-whatsapp-maringa.html  IA para WhatsApp em Maringá
+artigos.html                    Guias de IA, WhatsApp e vendas
 campanhas-whatsapp.html          Campanhas e disparos segmentados
 crm-integracoes.html             CRM, APIs e integrações
 sites-integrados.html            Sites e landing pages
@@ -18,6 +20,8 @@ assets/                          Imagens, CSS e JavaScript compartilhados
 robots.txt                       Regras para mecanismos de busca
 sitemap.xml                      URLs indexáveis
 CNAME                            Domínio do GitHub Pages
+tools/validate-seo.cjs           Validação local de SEO sem dependências
+SEO_IMPLEMENTATION.md           Relatório das melhorias de SEO
 ```
 
 ## Executar localmente
@@ -63,3 +67,15 @@ O `www` deve apontar via CNAME para o domínio GitHub Pages do repositório.
 - Revisar Termos e Política de Privacidade com orientação jurídica.
 - Validar os resultados, métricas e provas sociais da página AtendeFIT.
 - Testar todos os CTAs em produção e confirmar o recebimento no WhatsApp.
+
+## Validar SEO antes de publicar
+
+Com Node.js instalado, execute:
+
+```powershell
+node tools/validate-seo.cjs
+```
+
+O validador verifica as páginas do sitemap, títulos e descriptions únicos, canonical, Open Graph, Twitter Card, links, âncoras, imagens, JSON-LD, correspondência das FAQs e sintaxe dos scripts. Ele não mede Core Web Vitals nem substitui a revisão visual em desktop e mobile.
+
+As rotas principais usam `/` para a home e `.html` para páginas internas. `robots.txt` permite o rastreamento e aponta para o sitemap. O HTML de backup e a página 404 usam `noindex`.

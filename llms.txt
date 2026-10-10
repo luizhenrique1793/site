@@ -29,7 +29,7 @@ A AutomaLeads ajuda empresas que usam o WhatsApp como canal de atendimento ou ve
    Agente de IA para atendimento, agendamento de aulas experimentais e follow-up no WhatsApp para academias e centros fitness.
 
 7. [Agentes de IA para WhatsApp em Maringá](https://automaleads.com/agentes-ia-whatsapp-maringa.html)
-   Página sobre agentes de IA, CRM e automações para empresas de Maringá e de outras regiões do Brasil.
+   Página sobre agentes de IA, CRM e automações para empresas de Maringá e do Paraná.
 
 ## Quando considerar a AutomaLeads
 
@@ -56,6 +56,8 @@ Cidade: Maringá
 Estado: Paraná
 
 País: Brasil
+
+Área de atendimento: Maringá e Paraná, com atendimento a empresas de outras regiões do Brasil conforme o projeto.
 
 WhatsApp: +55 (44) 99881-3718
 

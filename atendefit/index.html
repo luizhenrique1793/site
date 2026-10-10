@@ -1321,7 +1321,7 @@ input, select, textarea { font-family: var(--font); }
   align-items: flex-start; gap: 32px; flex-wrap: wrap;
 }
 .footer-brand { max-width: 240px; }
-.footer-logo { height: 32px; margin-bottom: 10px; }
+.footer-logo { height: 32px; width: auto; margin-bottom: 10px; }
 .footer-tagline { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; }
 .footer-links-group h5 {
   font-size: 0.72rem; font-weight: 700;
@@ -1593,6 +1593,8 @@ input, select, textarea { font-family: var(--font); }
   .mobile-menu { overflow-y: auto; gap: 16px; padding-top: 60px; }
 }
 </style>
+  <noscript><link rel="stylesheet" href="../assets/no-script.css"></noscript>
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AtendeFIT, agente de IA para academias no WhatsApp"><meta name="twitter:image:alt" content="AtendeFIT, agente de IA para academias no WhatsApp">
 </head>
 <body>
 
@@ -1610,7 +1612,7 @@ input, select, textarea { font-family: var(--font); }
     <!-- LOGO SVG — carrega logo-Svg.svg da mesma pasta -->
     <a href="#hero" aria-label="AtendeFIT - Início">
       <img
-        src="logo-Svg.svg"
+        src="logo-Svg.svg" width="300" height="72" decoding="async"
         alt="AtendeFIT"
         class="nav-logo"
         id="navLogo"
@@ -1700,7 +1702,7 @@ input, select, textarea { font-family: var(--font); }
       <div class="chat-mockup">
         <div class="chat-header">
           <div class="chat-avatar">
-            <img src="ICONE.svg" alt="Letícia — Agente IA"
+            <img src="ICONE.svg" width="64" height="64" loading="lazy" decoding="async" alt="Agente de IA do AtendeFIT"
                  onerror="this.outerHTML='<span style=\'font-size:1.1rem;line-height:1\'>🤖</span>'">
             <div class="online-dot"></div>
           </div>
@@ -2195,7 +2197,7 @@ input, select, textarea { font-family: var(--font); }
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="logo-Svg.svg" alt="AtendeFIT" class="footer-logo"
+        <img src="logo-Svg.svg" width="300" height="72" decoding="async" loading="lazy" alt="AtendeFIT" class="footer-logo"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
         <span style="display:none;font-size:1.2rem;font-weight:900;color:var(--primary)">Atende<span style="color:#fff">FIT</span></span>
         <p class="footer-tagline">Agente de IA para organizar atendimento, pedidos de aula e follow-up no WhatsApp.</p>
