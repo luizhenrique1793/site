@@ -1,0 +1,81 @@
+/* Estilos limitados à seção comercial da home. */
+.pricing-section {
+  position: relative;
+  scroll-margin-top: 90px;
+  background: radial-gradient(ellipse at 100% 0, rgba(167,139,250,.09), transparent 45%), linear-gradient(140deg,#071722,#0c2736 60%,#082032);
+  color: #f2fbff;
+}
+.pricing-section .section-heading { max-width: 800px; }
+.pricing-section .eyebrow { color: #7deee4; }
+.pricing-section .section-heading h2 { color: #f2fbff; }
+.pricing-section .section-heading p { color: #b8cddd; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; align-items: stretch; }
+.pricing-section .price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px 24px 24px;
+  border: 1px solid rgba(157,224,243,.2);
+  border-radius: 22px;
+  background: linear-gradient(160deg,#133648,#091f2d);
+}
+.pricing-section .price-card.recommended {
+  border-color: rgba(112,241,221,.65);
+  background: linear-gradient(160deg,#124b4d,#102e49 70%);
+  box-shadow: 0 12px 32px rgba(0,0,0,.14);
+}
+.pricing-section .recommended-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #75ecde;
+  color: #063430;
+  font: 800 .65rem/1.5 "Manrope",sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.pricing-section .plan-name { margin: 0; color: #f2fbff; font: 700 1.25rem/1.3 "Manrope",sans-serif; }
+.pricing-section .plan-description { min-height: 7.5em; margin: 16px 0 24px; color: #b8cddd; font-size: .93rem; line-height: 1.6; }
+.pricing-section .plan-price { margin: 0 0 24px; color: #f2fbff; font: 800 clamp(1.8rem,2.5vw,2.15rem)/1.2 "Manrope",sans-serif; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+.pricing-section .plan-price small { display: inline-block; color: #b8cddd; font: 500 .85rem/1.5 "DM Sans",sans-serif; letter-spacing: 0; }
+.pricing-section .custom-price { font-size: 1.8rem; }
+.pricing-section .plan-group { padding-top: 22px; border-top: 1px solid rgba(157,224,243,.2); }
+.pricing-section .plan-group h4 { margin: 0 0 18px; color: #98b7ca; font: 700 .66rem/1.5 "Manrope",sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.pricing-section .plan-features { display: grid; align-content: start; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.pricing-section .plan-features strong { color: #f2fbff; font-weight: 700; }
+.pricing-section .plan-features li { display: flex; gap: 10px; color: #d2e2ed; font-size: .9rem; line-height: 1.55; }
+.pricing-section .plan-features li::before { content: "✓"; flex: none; color: #7deee4; font-weight: 700; }
+.pricing-section .button { width: 100%; margin-top: auto; padding: 13px 10px; font-size: .88rem; text-align: center; }
+.pricing-section .button.primary { background: #75ecde; color: #063430; box-shadow: none; }
+.pricing-section .button.primary:hover { background: #b1fff3; }
+.pricing-section .button.secondary { border-color: rgba(157,224,243,.35); background: rgba(255,255,255,.035); color: #f2fbff; }
+.pricing-section .button.secondary:hover { border-color: #bca7fa; background: rgba(167,139,250,.12); }
+.pricing-section a:focus-visible { outline: 3px solid #bca7fa; outline-offset: 4px; }
+.pricing-section .plan-note { max-width: 860px; margin: 28px auto 0; color: #b8cddd; font-size: .85rem; line-height: 1.7; text-align: center; }
+.pricing-section .plan-note a { color: #7deee4; text-decoration: underline; text-underline-offset: 3px; }
+/* Linhas compartilhadas alinham também os grupos de capacidade e recursos. */
+@supports (grid-template-rows: subgrid) {
+  .pricing-section .price-card { display: grid; grid-template-rows: subgrid; grid-row: span 6; row-gap: 20px; }
+  .pricing-section .plan-description { min-height: 0; margin: 0; }
+  .pricing-section .plan-price { margin: 0; }
+  .pricing-section .plan-features { margin: 0; }
+}
+@supports not (grid-template-rows: subgrid) {
+  .pricing-section .plan-group { margin-bottom: 24px; }
+}
+@media (min-width: 1240px) {
+  .pricing-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px 16px; }
+  .pricing-section .price-card { padding-inline: 20px; }
+  .pricing-section .recommended-label { left: 20px; }
+}
+@media (max-width: 639px) {
+  .pricing-grid { grid-template-columns: minmax(0,1fr); max-width: 480px; margin-inline: auto; }
+  .pricing-section .price-card { display: flex; grid-row: auto; row-gap: 0; padding: 30px 24px 24px; }
+  .pricing-section .plan-description { min-height: 0; margin: 16px 0 24px; }
+  .pricing-section .plan-price { margin-bottom: 24px; font-size: 2rem; }
+  .pricing-section .plan-group { margin-bottom: 24px; }
+  .pricing-section .plan-note { text-align: left; }
+}

@@ -1,0 +1,86 @@
+{
+  "signupUrl": "https://app.automaleads.com/criar-cadastro",
+  "quoteUrl": "https://wa.me/5544998813718?text=Olá%2C%20quero%20solicitar%20um%20orçamento%20sob%20medida%20para%20minha%20operação.",
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 297,
+      "description": "Ideal para pequenos negócios que querem automatizar o atendimento no WhatsApp e organizar seus primeiros processos comerciais.",
+      "features": [
+        "1 agente de IA para WhatsApp",
+        "Até 3 usuários",
+        "1 quadro de CRM",
+        "Até 2 automações",
+        "Até 3.000 contatos",
+        "Até 300 conversas por mês",
+        "Integração com WhatsApp",
+        "Atendimento automatizado com IA",
+        "Organização e acompanhamento de leads",
+        "Suporte técnico padrão"
+      ],
+      "capacityFeatureCount": 6
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "price": 597,
+      "recommended": true,
+      "description": "Para empresas que desejam aumentar a produtividade comercial, automatizar processos e gerenciar mais atendimentos.",
+      "features": [
+        "Até 3 agentes de IA",
+        "Até 6 usuários",
+        "Até 3 quadros de CRM",
+        "Até 6 automações",
+        "Até 12.000 contatos",
+        "Até 1.200 conversas por mês",
+        "Até 2 conexões de WhatsApp pela API oficial",
+        "Fluxos de atendimento e qualificação de leads",
+        "Gestão de oportunidades no CRM",
+        "Automações comerciais e acompanhamento de leads",
+        "Integrações conforme os recursos disponíveis na plataforma",
+        "Suporte técnico padrão"
+      ],
+      "capacityFeatureCount": 6
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 997,
+      "description": "Para empresas com equipes maiores, múltiplos atendentes e necessidade de automações mais avançadas.",
+      "features": [
+        "Até 6 agentes de IA",
+        "Até 12 usuários",
+        "Até 6 quadros de CRM",
+        "Até 15 automações",
+        "Até 40.000 contatos",
+        "Até 3.000 conversas por mês",
+        "Até 3 conexões de WhatsApp pela API oficial",
+        "Atendimento com IA para diferentes processos",
+        "Gestão de leads e oportunidades",
+        "Automações de vendas e relacionamento",
+        "Integrações com sistemas e APIs compatíveis",
+        "Recursos avançados de CRM",
+        "Suporte técnico padrão"
+      ],
+      "capacityFeatureCount": 6
+    },
+    {
+      "id": "sob-medida",
+      "name": "Sob Medida",
+      "price": null,
+      "description": "Solução personalizada para empresas com alto volume de atendimentos, redes, franquias e operações comerciais complexas.",
+      "features": [
+        "Quantidade de agentes de IA personalizada",
+        "Usuários e conexões conforme a necessidade",
+        "Limites de contatos e conversas personalizados",
+        "Automações e fluxos específicos",
+        "Integrações com sistemas e APIs",
+        "Estrutura adaptada à operação",
+        "Possibilidade de desenvolvimento personalizado",
+        "Implantação e suporte sob proposta"
+      ],
+      "capacityFeatureCount": 3
+    }
+  ]
+}
