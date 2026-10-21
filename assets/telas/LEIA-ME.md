@@ -15,3 +15,5 @@ Foram ocultados dados de contatos, fotos, mensagens, nomes de clientes, prévias
 Os quatro arquivos originais estão preservados em `.local-assets/telas-originais/`, pasta local ignorada pelo Git. `tela1.png` e `tela_fluxos_automaticos.png` são cópias idênticas. Não inclua a pasta `.local-assets` em publicações manuais.
 
 O conjunto de prompts utilizado está no arquivo local `.local-assets/telas-originais/PROMPTS.md`. O backup `index-bkp-20-10-2026.html` foi preservado.
+
+A galeria também inclui agenda, integrações e origem do lead como diagramas em HTML/CSS, identificados como exemplos ilustrativos. Eles não são capturas do sistema e não alteram os três JPEGs públicos.

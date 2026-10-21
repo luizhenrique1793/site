@@ -94,7 +94,10 @@ for (const [url, html] of documents) {
   for (const name of ['og:image', 'twitter:image']) check(fs.existsSync(path.join(root, fileFor(new URL(meta(name)[0].content)))), label + ': imagem social inexistente');
 }
 for (const url of urls) check(incoming.has(url), 'Página órfã: ' + url);
-for (const f of fs.readdirSync(root).filter(f => f.endsWith('.html') && !f.includes('bkp') && f !== '404.html')) check(documents.has(origin + (f === 'index.html' ? '/' : '/' + f)), 'Página pública ausente do sitemap: ' + f);
+for (const f of fs.readdirSync(root).filter(f => f.endsWith('.html') && !f.includes('bkp') && f !== '404.html')) {
+  const intentionallyUnindexed = /<meta\s+name="robots"\s+content="[^"]*\bnoindex\b/.test(read(f));
+  check(intentionallyUnindexed || documents.has(origin + (f === 'index.html' ? '/' : '/' + f)), 'Página pública ausente do sitemap: ' + f);
+}
 check(/name="robots" content="noindex/.test(read('404.html')), '404 indexável');
 check(/name="robots" content="noindex/.test(read('index - bkp 04-09-2026.html')), 'Backup indexável');
 const robots = read('robots.txt');

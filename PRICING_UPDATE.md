@@ -53,3 +53,7 @@ O arquivo histórico `index - bkp 04-09-2026.html`, marcado como `noindex` e for
 - Conferir o fluxo de criação de conta e início do teste na aplicação. A nova URL oficial não respondeu às tentativas de acesso deste ambiente; não foi criada conta nem realizado envio de formulário.
 - A rota de acesso à plataforma foi confirmada pelo responsável e aplicada como `http://app.automaleads.com/`. Conferir o fluxo real de autenticação na aplicação, sem criação ou uso de conta nos testes locais.
 - Conferir a experiência em aparelhos reais e o recebimento da solicitação comercial pelo WhatsApp após a publicação.
+
+## Apresentação compacta dos recursos
+
+Na revisão visual de 20/10/2026, `tools/render-plans.cjs` passou a gerar o grupo de recursos incluídos como `details/summary`, fechado inicialmente. A capacidade continua visível e todos os 43 itens continuam no HTML e em `assets/plans.json`. A abertura funciona sem JavaScript. A mudança não altera preços, limites, benefícios ou destinos de cadastro.

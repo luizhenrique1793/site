@@ -27,12 +27,12 @@ function renderPlan(plan) {
 ${renderFeatures(plan.features.slice(0, plan.capacityFeatureCount))}
             </ul>
           </div>
-          <div class="plan-group plan-included">
-            <h4>${custom ? 'Serviços sob proposta' : 'Recursos incluídos'}</h4>
+          <details class="plan-group plan-included">
+            <summary>${custom ? 'Ver serviços sob proposta' : 'Ver recursos incluídos'}</summary>
             <ul class="plan-features">
 ${renderFeatures(plan.features.slice(plan.capacityFeatureCount))}
             </ul>
-          </div>
+          </details>
           <a class="button ${plan.recommended ? 'primary' : 'secondary'}" href="${escape(custom ? quoteUrl : signupUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(cta)}: ${escape(plan.name)}">${cta}</a>
         </article>`;
 }
@@ -41,8 +41,8 @@ const section = `    <!-- plans:start | Gerado por tools/render-plans.cjs; edita
       <div class="container">
         <div class="section-heading center">
           <span class="eyebrow">CRM para WhatsApp com IA</span>
-          <h2 id="pricing-title">Planos inteligentes para empresas de todos os tamanhos</h2>
-          <p id="pricing-description">Comece automatizando seu atendimento no WhatsApp e amplie sua operação com agentes de IA, CRM e automações comerciais.</p>
+          <h2 id="pricing-title">Um plano para cada operação</h2>
+          <p id="pricing-description">Compare a capacidade e explore os recursos de cada plano.</p>
         </div>
         <div class="pricing-grid">
 ${plans.map(renderPlan).join('\n')}

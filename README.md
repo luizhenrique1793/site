@@ -26,6 +26,8 @@ assets/pricing.css              Estilos responsivos da seção de planos
 assets/home-refresh.css         Direção visual exclusiva da home
 assets/home-refresh.js          Ajustes de privacidade e navegação das abas
 assets/home-contrast.css        Seções claras e simulação do WhatsApp
+assets/home-visual.css          Revisão de densidade e recursos visuais
+VISUAL_REVIEW.md                Decisões, fontes e validação da revisão visual
 assets/hero-chat.js             Controles da conversa ilustrativa
 assets/telas/                   Capturas preparadas para apresentação pública
 index-bkp-20-10-2026.html         Backup visual da home antes da revisão
@@ -99,7 +101,7 @@ Execute `node tools/render-plans.cjs --check` para conferir se o HTML correspond
 
 A versão anterior está em `index-bkp-20-10-2026.html`, com os estilos anteriores dos planos embutidos e `noindex, nofollow`. Ela usa as imagens, vídeos e arquivos compartilhados existentes, que foram preservados. Não está na navegação nem no sitemap. Para restaurá-la como página principal, é necessário também restabelecer a meta robots indexável.
 
-A home atual tem CTA inicial visível e hero com 150vh no desktop (antes, 340vh). O topo apresenta uma conversa ilustrativa entre cliente e agente de IA, com qualificação do interesse e contexto organizado para o CRM. A galeria mantém as três capturas reais da plataforma. Áreas claras de serviços, cenários, recursos, calculadora e FAQ alternam com demonstração, processo, atuação e planos em fundo escuro. Os planos separam capacidade e recursos sem alterar preços ou benefícios. O aviso de cookies é compacto somente na home e o WhatsApp se reposiciona conforme a altura do aviso. As páginas internas mantêm seus estilos e comportamentos anteriores.
+A home atual tem CTA inicial visível e hero com 150vh no desktop (antes, 340vh). O topo apresenta uma conversa ilustrativa entre cliente e agente de IA, com qualificação do interesse e contexto organizado para o CRM. A galeria mantém as três capturas reais da plataforma. Áreas claras de serviços, calculadora e FAQ alternam com demonstração, processo, atuação e planos em fundo escuro. As explicações repetidas de cenários e recursos foram consolidadas na galeria. Os planos separam capacidade e recursos sem alterar preços ou benefícios. O aviso de cookies é compacto somente na home e o WhatsApp se reposiciona conforme a altura do aviso. As páginas internas mantêm seus estilos e comportamentos anteriores.
 
 Verificação local: Chrome headless em larguras de 1.440, 1.024, 768, 390 e 320 px, capturas inspecionadas, carregamento das imagens, alinhamento dos planos, menu mobile, recusa dos cookies opcionais, FAQ, navegação por teclado nas abas e movimento reduzido. Os comandos de SEO e consistência dos planos continuam aplicáveis. As telas foram preparadas a partir das capturas fornecidas, com recorte e ocultação de dados pelo Imagegen integrado. Os JPEGs públicos somam 318.318 bytes, com detalhes em `assets/telas/LEIA-ME.md`. Sem JavaScript, a galeria exibe as três telas. As alterações não foram publicadas.
 
@@ -107,7 +109,7 @@ Os originais das capturas estão em `.local-assets/telas-originais/`, fora do Gi
 
 ## Serviços da empresa
 
-A seção `#servicos` da home fica visível antes da galeria da plataforma e apresenta criação de sites, sistemas em nuvem personalizados, tráfego pago e consultoria de marketing para redes sociais. Cada serviço mostra uma possibilidade de conexão com agentes de IA, WhatsApp e CRM e tem um CTA de orçamento para o WhatsApp comercial existente. Sites e tráfego pago também apontam para suas páginas de detalhes.
+A seção `#servicos` da home fica visível antes da galeria da plataforma e apresenta criação de sites, sistemas em nuvem personalizados, tráfego pago e consultoria de marketing para redes sociais. Cada serviço tem uma miniatura visual, uma descrição curta, etiquetas de conexão e um CTA para o WhatsApp comercial existente. Sites e tráfego pago também apontam para suas páginas de detalhes.
 
 O fluxo visual exemplifica marketing e redes sociais → site ou sistema → WhatsApp com IA → CRM e equipe. A contratação pode ser separada ou integrada, com escopo, entregas, conexões e investimento definidos em proposta. Os planos da plataforma continuam com preços e limites próprios.
 
@@ -124,3 +126,11 @@ Antes desta revisão foi criado `index-bkp-antes-contraste-20-10-2026.html`, com
 A conversa do hero é uma simulação em HTML, identificada como ilustrativa, sem envio de mensagens ou conexão à plataforma. A sequência roda uma vez, tem pausa e repetição e pausa fora da área visível. Sem JavaScript ou com preferência por movimento reduzido, todo o conteúdo fica visível e os controles são ocultados. As telas reais continuam na galeria.
 
 Verificação desta revisão: Chrome em 320, 390, 768, 1.024 e 1.440 px; leitura das seções claras; controles de pausa, retomada e repetição; movimento reduzido; hero e galeria sem JavaScript; links de retorno à home em arquivos locais e URLs hospedadas; integridade dos backups; validação de SEO (13 páginas, 1.050 verificações) e consistência dos planos. Alterações locais, sem publicação.
+
+## Revisão de densidade e recursos
+
+A home agora reúne seis áreas na galeria: agentes de IA, chat, automações, agenda, integrações e origem do lead. As três primeiras usam capturas reais; as demais usam exemplos em HTML/CSS identificados como ilustrativos. A central de ajuda pública fornecida pelo responsável foi consultada para conferir agenda, Google Agenda, webhooks, links rastreáveis e jornada do lead. Consulte `VISUAL_REVIEW.md` para fontes e verificações.
+
+Os detalhes de recursos dos planos e a calculadora usam `details/summary`, com expansão nativa mesmo sem JavaScript. Preços, capacidades e os 43 recursos dos planos permanecem na fonte de dados e no HTML. Sem JavaScript, todas as seis áreas da galeria aparecem em sequência. Os antigos links `#solucoes` e `#cenarios` levam à galeria consolidada.
+
+Backup desta revisão: `index-bkp-antes-revisao-visual-recursos-20-10-2026.html`, com CSS e scripts de ajustes anteriores embutidos e meta robots não indexável. A cópia local `index - Copia.html` recebeu apenas `noindex, nofollow`; seu visual foi preservado. O validador aceita páginas explicitamente não indexáveis fora do sitemap e continua exigindo indexação das páginas do sitemap. Nenhuma alteração foi publicada.
