@@ -20,7 +20,7 @@ function renderPlan(plan) {
   return `        <article class="price-card${plan.recommended ? ' recommended' : ''}" aria-labelledby="plan-${escape(plan.id)}">
           ${plan.recommended ? '<span class="recommended-label">Mais escolhido</span>\n          ' : ''}<h3 class="plan-name" id="plan-${escape(plan.id)}">${escape(plan.name)}</h3>
           <p class="plan-description">${escape(plan.description)}</p>
-          <p class="plan-price${custom ? ' custom-price' : ''}">${custom ? 'Sob consulta' : `${escape(currency.format(plan.price))} <small>/mês</small>`}</p>
+          <p class="plan-price${custom ? ' custom-price' : ''}"${custom ? '' : ` data-regular-price="${plan.price}" data-plan-name="${escape(plan.name)}"`}>${custom ? 'Sob consulta' : `${escape(currency.format(plan.price))} <small>/mês</small>`}</p>
           <div class="plan-group plan-capacity">
             <h4>${custom ? 'Configuração da operação' : 'Capacidade do plano'}</h4>
             <ul class="plan-features">
@@ -43,6 +43,11 @@ const section = `    <!-- plans:start | Gerado por tools/render-plans.cjs; edita
           <span class="eyebrow">CRM para WhatsApp com IA</span>
           <h2 id="pricing-title">Um plano para cada operação</h2>
           <p id="pricing-description">Compare a capacidade e explore os recursos de cada plano.</p>
+        </div>
+        <div class="promotion-banner" id="promotion-banner" hidden>
+          <strong>R$ 100 de desconto por mês nos 6 primeiros meses</strong>
+          <span>Para contratações dos planos Starter, Growth e Pro até 04/11/2026 às 13h38, horário de Brasília.</span>
+          <span>Oferta termina em <b id="promotion-countdown"></b></span>
         </div>
         <div class="pricing-grid">
 ${plans.map(renderPlan).join('\n')}

@@ -9,6 +9,10 @@
 .pricing-section .eyebrow { color: #7deee4; }
 .pricing-section .section-heading h2 { color: #f2fbff; }
 .pricing-section .section-heading p { color: #b8cddd; }
+.pricing-section .promotion-banner:not([hidden]) { display: grid; gap: 6px; max-width: 760px; margin: 0 auto 32px; padding: 18px 22px; border: 1px solid rgba(117,236,222,.45); border-radius: 16px; background: rgba(117,236,222,.09); color: #d2e2ed; text-align: center; }
+.pricing-section .promotion-banner strong, .pricing-section .promotion-banner b { color: #7deee4; }
+.pricing-section .promotion-banner span { font-size: .9rem; }
+.pricing-section .promotion-old { display: block; margin-bottom: 4px; color: #b8cddd; font: 500 .85rem/1.5 "DM Sans",sans-serif; letter-spacing: 0; text-decoration: line-through; }
 .pricing-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; align-items: stretch; }
 .pricing-section .price-card {
   position: relative;
